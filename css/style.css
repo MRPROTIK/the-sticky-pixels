@@ -670,6 +670,8 @@ body {
   box-shadow: 0 4px 20px rgba(0,0,0,0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
   position: relative;
+  display: block !important;
+  opacity: 1 !important;
 }
 .product-card:hover {
   transform: translateY(-8px);

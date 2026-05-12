@@ -48,34 +48,32 @@ document.addEventListener('DOMContentLoaded', () => {
         fadeObserver.observe(el);
     });
 
-    // Product filter tabs
-    const filterTabs = document.querySelectorAll('.filter-tab');
-    const productCards = document.querySelectorAll('.product-card');
-    
-    if (filterTabs.length > 0) {
-      filterTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          filterTabs.forEach(t => t.classList.remove('active'));
-          tab.classList.add('active');
-          const filter = tab.dataset.filter;
-          productCards.forEach(card => {
-            if (filter === 'all' || card.dataset.category === filter) {
-              card.style.display = 'block';
-              setTimeout(() => card.style.opacity = '1', 10);
-            } else {
-              card.style.opacity = '0';
-              setTimeout(() => card.style.display = 'none', 300);
-            }
-          });
-        });
-      });
-    }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const allCards = document.querySelectorAll('.product-card');
-  allCards.forEach(card => {
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const productCards = document.querySelectorAll('.product-card');
+
+  // Show all on load
+  productCards.forEach(card => {
     card.style.display = 'block';
     card.style.opacity = '1';
+  });
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const filter = tab.dataset.filter;
+      productCards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = 'block';
+          card.style.opacity = '1';
+        } else {
+          card.style.display = 'none';
+          card.style.opacity = '0';
+        }
+      });
+    });
   });
 });
