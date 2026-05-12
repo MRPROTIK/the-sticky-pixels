@@ -327,13 +327,12 @@ body {
 
 /* Premium Footer Styles */
 #main-footer {
-    background-color: #1A0A00;
+    background-color: #FDF8F3;
     /* very subtle warm texture using linear gradient */
-    background-image: radial-gradient(circle at center, rgba(255,255,255,0.01) 0%, transparent 100%);
-    color: #FFF8F3;
+    background-image: radial-gradient(circle at center, rgba(0,0,0,0.01) 0%, transparent 100%);
+    color: #5C3D2E;
     position: relative;
     padding-top: 80px;
-    padding-bottom: 40px;
 }
 
 .footer-top-border {
@@ -357,21 +356,20 @@ body {
 /* Column 1: Brand */
 .footer-logo {
     height: 60px;
-    filter: brightness(0) invert(1);
     margin-bottom: 15px;
 }
 
 .footer-tagline {
     font-style: italic;
     font-size: 14px;
-    color: #B8A99A;
+    color: #8B6355;
     margin-bottom: 15px;
     margin-top: 0;
 }
 
 .footer-desc {
     font-size: 13px;
-    color: #B8A99A;
+    color: #8B6355;
     line-height: 1.6;
     margin-bottom: 25px;
 }
@@ -388,17 +386,18 @@ body {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #FFF8F3;
+    border: 1px solid rgba(232,98,26,0.3);
+    color: #E8621A;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
 .footer-socials a:hover {
     background-color: #E8621A;
     border-color: #E8621A;
+    color: white;
 }
 
 /* Headings */
@@ -436,7 +435,7 @@ body {
 }
 
 .footer-links a {
-    color: #B8A99A;
+    color: #5C3D2E;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -461,7 +460,7 @@ body {
 
 .footer-contact p {
     font-size: 14px;
-    color: #B8A99A;
+    color: #5C3D2E;
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -473,14 +472,14 @@ body {
 .footer-newsletter h5 {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
-    color: #FFF8F3;
+    color: #E8621A;
     margin-bottom: 5px;
     margin-top: 0;
 }
 
 .footer-newsletter p {
     font-size: 12px;
-    color: #B8A99A;
+    color: #8B6355;
     margin-bottom: 15px;
     margin-top: 0;
 }
@@ -491,9 +490,9 @@ body {
 }
 
 .newsletter-form input {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    color: #FFF8F3;
+    background: white;
+    border: 1px solid rgba(232,98,26,0.3);
+    color: #2D1B0E;
     border-radius: 25px 0 0 25px;
     padding: 12px 20px;
     outline: none;
@@ -502,7 +501,7 @@ body {
 }
 
 .newsletter-form input::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(45, 27, 14, 0.5);
 }
 
 .newsletter-form button {
@@ -522,7 +521,8 @@ body {
 
 /* Bottom Bar */
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(232,98,26,0.15);
+    background-color: #F5EDE6;
     padding: 24px 0;
     margin-top: 40px;
 }
@@ -536,7 +536,7 @@ body {
 
 .footer-bottom p {
     font-size: 13px;
-    color: #B8A99A;
+    color: #8B6355;
     margin: 0;
 }
 
@@ -547,7 +547,7 @@ body {
 }
 
 .footer-bottom-links a {
-    color: #B8A99A;
+    color: #8B6355;
     text-decoration: none;
     font-size: 13px;
     transition: color 0.3s ease;
@@ -558,7 +558,7 @@ body {
 }
 
 .footer-bottom-links span {
-    color: #B8A99A;
+    color: #8B6355;
 }
 
 /* Responsive Styles */
