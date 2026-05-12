@@ -104,11 +104,11 @@ body {
 
 /* Logo */
 .nav-logo img {
-    height: 65px;
-    width: auto;
-    display: block;
-    object-fit: contain;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  background: transparent;
 }
 
 /* Desktop Nav Links */
