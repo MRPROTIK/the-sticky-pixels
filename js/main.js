@@ -71,3 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const allCards = document.querySelectorAll('.product-card');
+  allCards.forEach(card => {
+    card.style.display = 'block';
+    card.style.opacity = '1';
+  });
+});
