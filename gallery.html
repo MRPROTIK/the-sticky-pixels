@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — The Sticky Pixels</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: #FDF8F3;">
+
+  <header id="main-header">
+    <!-- Aurora background blobs -->
+    <div class="aurora-blob blob-1"></div>
+    <div class="aurora-blob blob-2"></div>
+    <div class="aurora-blob blob-3"></div>
+
+    <!-- Glass nav container -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="The Sticky Pixels Logo">
+      </div>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="3d-products.html">3D Products</a></li>
+        <li><a href="bulk-orders.html">Bulk Orders</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="nav-icons">
+        <button class="icon-btn search-btn" aria-label="Search">🔍</button>
+        <button class="icon-btn cart-btn" aria-label="Cart">
+          🛒 <span class="cart-badge">0</span>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="3d-products.html">3D Products</a></li>
+        <li><a href="bulk-orders.html">Bulk Orders</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-icons">
+        <button class="icon-btn">🔍</button>
+        <button class="icon-btn">🛒 <span class="cart-badge">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1 — PAGE HERO BANNER -->
+    <section class="page-hero-banner fade-in-up">
+      <div class="container text-center">
+        <div class="breadcrumb">Home > Gallery</div>
+        <h1 class="page-title">Our Gallery</h1>
+        <p class="page-subtitle">Real products, real memories — made with love by The Sticky Pixels</p>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — FILTER TABS -->
+    <section class="filter-tabs-container">
+      <div class="container text-center">
+        <div class="filter-tabs">
+          <button class="filter-tab gallery-tab active" data-filter="all">All</button>
+          <button class="filter-tab gallery-tab" data-filter="magnets">Photo Magnets</button>
+          <button class="filter-tab gallery-tab" data-filter="3d">3D Frames</button>
+          <button class="filter-tab gallery-tab" data-filter="openers">Bottle Openers</button>
+          <button class="filter-tab gallery-tab" data-filter="bulk">Bulk & Frames</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — MASONRY GALLERY GRID -->
+    <section class="masonry-gallery-section fade-in-up">
+      <div class="gallery-grid">
+        
+        <div class="gallery-item" data-category="magnets">
+          <div class="gallery-img-wrap">
+            <img src="images/image15.jpeg" alt="Wedding Memory Magnets" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Wedding Memory Magnets</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="magnets">
+          <div class="gallery-img-wrap">
+            <img src="images/image17.jpeg" alt="Custom Kids Photo Magnets" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Custom Kids Photo Magnets</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="3d">
+          <div class="gallery-img-wrap">
+            <img src="images/image4.jpeg" alt="3D MOM Photo Frame" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>3D MOM Photo Frame</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="3d">
+          <div class="gallery-img-wrap">
+            <img src="images/image3.jpeg" alt="3D Family Frame — Black" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>3D Family Frame — Black</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="bulk">
+          <div class="gallery-img-wrap">
+            <img src="images/image5.jpeg" alt="White Family Acrylic Frame" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>White Family Acrylic Frame</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="openers">
+          <div class="gallery-img-wrap">
+            <img src="images/image11.jpeg" alt="Magnetic Bottle Openers Display" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Magnetic Bottle Openers Display</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="magnets">
+          <div class="gallery-img-wrap">
+            <img src="images/image19.jpeg" alt="Magnet Making Process" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Magnet Making Process</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="magnets">
+          <div class="gallery-img-wrap">
+            <img src="images/image16.jpeg" alt="Pet Photo Magnet on Easel" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Pet Photo Magnet on Easel</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="magnets">
+          <div class="gallery-img-wrap">
+            <img src="images/image9.jpeg" alt="Photo Magnets on Easel" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Photo Magnets on Easel</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="magnets">
+          <div class="gallery-img-wrap">
+            <img src="images/image10.jpeg" alt="Flexible Photo Magnets" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Flexible Photo Magnets</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="bulk">
+          <div class="gallery-img-wrap">
+            <img src="images/image8.jpeg" alt="Bulk Magnet Display" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Bulk Magnet Display</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="openers">
+          <div class="gallery-img-wrap">
+            <img src="images/image7.jpeg" alt="Bottle Opener Collection" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Bottle Opener Collection</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="3d">
+          <div class="gallery-img-wrap">
+            <img src="images/image6.jpeg" alt="3D Frame Collection" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>3D Frame Collection</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="magnets">
+          <div class="gallery-img-wrap">
+            <img src="images/image14.jpeg" alt="Custom Photo Magnets" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Custom Photo Magnets</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="bulk">
+          <div class="gallery-img-wrap">
+            <img src="images/image13.jpeg" alt="Acrylic Frame Display" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Acrylic Frame Display</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="magnets">
+          <div class="gallery-img-wrap">
+            <img src="images/image12.jpeg" alt="Photo Magnet Collection" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Photo Magnet Collection</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="3d">
+          <div class="gallery-img-wrap">
+            <img src="images/image2.jpeg" alt="3D Printed Frames" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>3D Printed Frames</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="bulk">
+          <div class="gallery-img-wrap">
+            <img src="images/image1.jpeg" alt="Bulk Order Display" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Bulk Order Display</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="bulk">
+          <div class="gallery-img-wrap">
+            <img src="images/image0 (1).jpeg" alt="Event Display Setup" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Event Display Setup</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="magnets">
+          <div class="gallery-img-wrap">
+            <img src="images/image18.jpeg" alt="Custom Magnet Close-up" loading="lazy">
+            <div class="gallery-overlay">
+              <div class="gallery-caption">
+                <p>Custom Magnet Close-up</p>
+                <a href="products.html" class="gallery-btn">Shop This</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4 — INSTAGRAM CTA STRIP -->
+    <section class="ig-strip-section fade-in-up">
+      <div class="container text-center">
+        <div class="ig-icon">📸</div>
+        <h2 class="ig-heading">Share Your Sticky Pixels Moment</h2>
+        <p class="ig-subtext">Tag us on Instagram @thestickypixels and get featured in our gallery!</p>
+        <a href="#" class="btn btn-primary mt-40">Follow on Instagram</a>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — CTA BANNER -->
+    <section class="cta-section fade-in-up">
+      <div class="container text-center">
+        <h2 class="cta-title">Love What You See?</h2>
+        <p class="cta-subtitle">Turn your own photos into beautiful magnets and frames today</p>
+        <a href="products.html" class="btn btn-cta">Shop Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+  <footer id="main-footer">
+    <!-- Top gradient border -->
+    <div class="footer-top-border"></div>
+
+    <div class="footer-container">
+      <!-- Column 1: Brand -->
+      <div class="footer-col footer-brand">
+        <img src="images/logo.png" alt="The Sticky Pixels" class="footer-logo">
+        <p class="footer-tagline">Every Pixel Tells a Story</p>
+        <p class="footer-desc">We turn your favorite memories into beautiful custom magnets you can hold forever.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Pinterest">p</a>
+          <a href="#" aria-label="Etsy">e</a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Products -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Our Products</h4>
+        <ul class="footer-links">
+          <li><a href="products.html">Custom Photo Magnets</a></li>
+          <li><a href="products.html">Flexible Photo Magnets</a></li>
+          <li><a href="products.html">Magnetic Bottle Openers</a></li>
+          <li><a href="bulk-orders.html">Acrylic Photo Frames</a></li>
+          <li><a href="bulk-orders.html">Magnetic Sheets 8.5x11</a></li>
+          <li><a href="3d-products.html">3D Printed Photo Frames</a></li>
+          <li><a href="3d-products.html">3D STL Files</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact & Newsletter -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Get In Touch</h4>
+        <div class="footer-contact">
+          <p>📧 contact.thestickypixels@gmail.com</p>
+          <p>🕐 Mon–Fri, 9am–6pm EST</p>
+          <p>🌍 Ships Worldwide</p>
+        </div>
+        <div class="footer-newsletter">
+          <h5>Stay in the Loop</h5>
+          <p>Get deals, new products & inspiration.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <div>
+          <p>© 2026 The Sticky Pixels. All rights reserved.</p>
+          <p style="font-size: 12px; color: #8B6355; margin-top: 4px;">
+            Powered by <a href="https://adsnord.com/" target="_blank"
+              style="color: #E8621A; text-decoration: none; font-weight: 600;">AdsNord</a>
+          </p>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>·</span>
+          <a href="#">Terms of Service</a>
+          <span>·</span>
+          <a href="#">Shipping Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

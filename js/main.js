@@ -76,4 +76,30 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  // Gallery filter
+  const galleryTabs = document.querySelectorAll('.gallery-tab');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  if (galleryTabs.length > 0) {
+    galleryItems.forEach(item => {
+      item.style.display = 'block';
+    });
+
+    galleryTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        galleryTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const filter = tab.dataset.filter;
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = 'block';
+            item.style.opacity = '1';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
 });
