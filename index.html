@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sticky Pixels — Custom Photo Magnets</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<header id="main-header">
+  <!-- Aurora background blobs -->
+  <div class="aurora-blob blob-1"></div>
+  <div class="aurora-blob blob-2"></div>
+  <div class="aurora-blob blob-3"></div>
+  <div class="aurora-blob blob-4"></div>
+
+  <!-- Glass nav container -->
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="nav-logo">
+      <img src="images/logo.png" alt="The Sticky Pixels Logo">
+    </div>
+
+    <!-- Desktop Nav Links -->
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="3d-products.html">3D Products</a></li>
+      <li><a href="bulk-orders.html">Bulk Orders</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Right Icons -->
+    <div class="nav-icons">
+      <button class="icon-btn search-btn" aria-label="Search">🔍</button>
+      <button class="icon-btn cart-btn" aria-label="Cart">
+        🛒 <span class="cart-badge">0</span>
+      </button>
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="3d-products.html">3D Products</a></li>
+      <li><a href="bulk-orders.html">Bulk Orders</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-icons">
+      <button class="icon-btn">🔍</button>
+      <button class="icon-btn">🛒 <span class="cart-badge">0</span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Spacer/Content to allow scrolling -->
+<main style="padding-top: 100px; padding-left: 20px; padding-right: 20px; font-family: 'Inter', sans-serif;">
+    <section style="height: 1500px; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 40px; border-radius: 20px; margin-bottom: 40px;">
+        <h1 style="font-family: 'Playfair Display', serif; font-size: 3rem; color: #2D1B0E;">Welcome to The Sticky Pixels</h1>
+        <p style="font-size: 1.2rem; color: #4A4A4A; max-width: 600px; line-height: 1.6;">Custom photo magnets that bring your memories to life. Scroll down to see the sticky header effect in action!</p>
+    </section>
+</main>
+
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
