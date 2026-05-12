@@ -1107,26 +1107,27 @@ body {
   gap: 20px;
 }
 .contact-form .form-group {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .contact-form label {
   display: block;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: #2D1B0E;
   margin-bottom: 8px;
+  letter-spacing: 0.3px;
 }
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
   width: 100%;
-  padding: 14px 18px;
-  border: 1.5px solid #E8D5C4;
+  padding: 16px 18px;
+  border: none;
   border-radius: 12px;
   font-size: 15px;
   color: #2D1B0E;
-  background: #FDFAF7;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background: #F5F5F5;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
   font-family: 'Inter', sans-serif;
   outline: none;
   box-sizing: border-box;
@@ -1134,8 +1135,8 @@ body {
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: #E8621A;
-  box-shadow: 0 0 0 3px rgba(232,98,26,0.1);
+  background: #EFEFEF;
+  box-shadow: 0 0 0 3px rgba(232,98,26,0.15);
 }
 .contact-form textarea {
   resize: vertical;
@@ -1147,16 +1148,16 @@ body {
   background: #E8621A;
   color: white;
   border: none;
-  border-radius: 50px;
+  border-radius: 12px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease;
   font-family: 'Inter', sans-serif;
+  letter-spacing: 0.5px;
 }
 .btn-submit:hover {
   background: #C44E0F;
-  transform: translateY(-2px);
 }
 
 .contact-info-card {

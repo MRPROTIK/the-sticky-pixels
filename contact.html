@@ -99,20 +99,21 @@
             <div class="form-row">
               <div class="form-group">
                 <label>First Name</label>
-                <input type="text" placeholder="John">
+                <input type="text" placeholder="First name">
               </div>
               <div class="form-group">
                 <label>Last Name</label>
-                <input type="text" placeholder="Doe">
+                <input type="text" placeholder="Last name">
               </div>
             </div>
             <div class="form-group">
-              <label>Email Address</label>
-              <input type="email" placeholder="john@example.com">
+              <label>Email</label>
+              <input type="email" placeholder="you@example.com">
             </div>
             <div class="form-group">
               <label>Subject</label>
               <select>
+                <option value="" disabled selected>Select a subject</option>
                 <option>General Inquiry</option>
                 <option>Custom Order</option>
                 <option>Bulk Order</option>
@@ -123,8 +124,12 @@
               </select>
             </div>
             <div class="form-group">
-              <label>Message</label>
-              <textarea rows="6" placeholder="Tell us how we can help you..."></textarea>
+              <label>Estimated Quantity (if applicable)</label>
+              <input type="text" placeholder="e.g. 50, 100, 200+">
+            </div>
+            <div class="form-group">
+              <label>Tell us more</label>
+              <textarea rows="6" placeholder="Event date, special requests, design ideas..."></textarea>
             </div>
             <button type="submit" class="btn-submit">Send Message</button>
           </form>
