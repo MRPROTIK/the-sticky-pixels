@@ -1,394 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Sticky Pixels — Custom Photo Magnets</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sticky Pixels — Custom Photo Magnets</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header id="main-header">
-  <!-- Aurora background blobs -->
-  <div class="aurora-blob blob-1"></div>
-  <div class="aurora-blob blob-2"></div>
-  <div class="aurora-blob blob-3"></div>
+  <header id="main-header">
+    <!-- Aurora background blobs -->
+    <div class="aurora-blob blob-1"></div>
+    <div class="aurora-blob blob-2"></div>
+    <div class="aurora-blob blob-3"></div>
 
-  <!-- Glass nav container -->
-  <nav class="navbar">
-    <!-- Logo -->
-    <div class="nav-logo">
-      <img src="images/logo.png" alt="The Sticky Pixels Logo">
-    </div>
-
-    <!-- Desktop Nav Links -->
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="3d-products.html">3D Products</a></li>
-      <li><a href="bulk-orders.html">Bulk Orders</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-    <!-- Right Icons -->
-    <div class="nav-icons">
-      <button class="icon-btn search-btn" aria-label="Search">🔍</button>
-      <button class="icon-btn cart-btn" aria-label="Cart">
-        🛒 <span class="cart-badge">0</span>
-      </button>
-      <!-- Hamburger -->
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobile-menu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="3d-products.html">3D Products</a></li>
-      <li><a href="bulk-orders.html">Bulk Orders</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="mobile-icons">
-      <button class="icon-btn">🔍</button>
-      <button class="icon-btn">🛒 <span class="cart-badge">0</span></button>
-    </div>
-  </div>
-</header>
-
-<!-- Spacer/Content to allow scrolling -->
-<main>
-  <!-- SECTION 1 — HERO -->
-  <section class="hero-section fade-in-up">
-    <div class="container hero-container">
-      <div class="hero-content">
-        <div class="hero-badge">✨ Custom Photo Gifts</div>
-        <h1 class="hero-title">Turn Your Memories Into Magnets</h1>
-        <p class="hero-subtitle">Where your favorite moments become magnets you can hold onto forever. Premium quality, vivid colors, made with love.</p>
-        <div class="hero-buttons">
-          <a href="#" class="btn btn-primary">Shop Now</a>
-          <a href="#" class="btn btn-secondary">How It Works</a>
-        </div>
-        <div class="hero-trust">
-          <span>✅ Free Shipping on Orders $35+</span>
-          <span>✅ Ships in 3–5 Business Days</span>
-          <span>✅ 100% Satisfaction Guaranteed</span>
-        </div>
+    <!-- Glass nav container -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="The Sticky Pixels Logo">
       </div>
-      <div class="hero-images">
-        <img src="images/image15.jpeg" alt="Wedding magnets on easels" class="hero-img hero-img-main">
-        <img src="images/image17.jpeg" alt="Kids magnets" class="hero-img hero-img-tr">
-        <img src="images/image4.jpeg" alt="3D MOM frame" class="hero-img hero-img-bl">
-      </div>
-    </div>
-  </section>
 
-  <!-- SECTION 2 — MARQUEE TRUST BAR -->
-  <section class="marquee-section fade-in-up">
-    <div class="marquee-container">
-      <div class="marquee-content">
-        ✦ Custom Photo Magnets &nbsp;&nbsp; ✦ Premium Quality Print &nbsp;&nbsp; ✦ Vivid Colors &nbsp;&nbsp; ✦ 3D Photo Frames &nbsp;&nbsp; ✦ Magnetic Bottle Openers &nbsp;&nbsp; ✦ Bulk Orders Welcome &nbsp;&nbsp; ✦ Ships Worldwide &nbsp;&nbsp;
-        <!-- Duplicate for infinite scroll loop -->
-        ✦ Custom Photo Magnets &nbsp;&nbsp; ✦ Premium Quality Print &nbsp;&nbsp; ✦ Vivid Colors &nbsp;&nbsp; ✦ 3D Photo Frames &nbsp;&nbsp; ✦ Magnetic Bottle Openers &nbsp;&nbsp; ✦ Bulk Orders Welcome &nbsp;&nbsp; ✦ Ships Worldwide &nbsp;&nbsp;
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 3 — WHY CHOOSE US -->
-  <section class="features-section fade-in-up">
-    <div class="container">
-      <h2 class="section-title">Why Customers Love Us</h2>
-      <p class="section-subtitle">Every magnet is made with care, quality materials, and your memories in mind</p>
-      
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🎨</div>
-          <h3 class="feature-title">Vivid Color Printing</h3>
-          <p class="feature-desc">High-quality materials that make your photos pop with stunning detail</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3 class="feature-title">Fast Turnaround</h3>
-          <p class="feature-desc">Orders ship in 3–5 business days so you never wait too long</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">📦</div>
-          <h3 class="feature-title">Ships Worldwide</h3>
-          <p class="feature-desc">We deliver your memories anywhere in the world with care</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💝</div>
-          <h3 class="feature-title">Made with Love</h3>
-          <p class="feature-desc">Small team, personal touch — every order matters to us</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 4 — FEATURED PRODUCTS -->
-  <section class="products-section fade-in-up">
-    <div class="container">
-      <h2 class="section-title">Our Most Loved Products</h2>
-      <p class="section-subtitle">From fridge magnets to 3D frames — something for every memory</p>
-      
-      <div class="products-grid">
-        <!-- Product 1 -->
-        <div class="product-card">
-          <div class="product-badge badge-orange">Best Seller</div>
-          <img src="images/image17.jpeg" alt="Custom Photo Magnets 2.5x2.5" class="product-img">
-          <div class="product-info">
-            <h3 class="product-title">Custom Photo Magnets 2.5x2.5</h3>
-            <p class="product-desc">Classic square magnets perfect for your fridge or office board</p>
-            <a href="#" class="btn btn-outline">View Product</a>
-          </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="product-card">
-          <div class="product-badge badge-neutral">Multiple Sizes</div>
-          <img src="images/image15.jpeg" alt="Flexible Photo Magnets" class="product-img">
-          <div class="product-info">
-            <h3 class="product-title">Flexible Photo Magnets</h3>
-            <p class="product-desc">Available in 2.5x3.5, 3.25x4 and 5x7 — perfect for larger memories</p>
-            <a href="#" class="btn btn-outline">View Product</a>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product-card">
-          <div class="product-badge badge-neutral">Great Gift</div>
-          <img src="images/image11.jpeg" alt="Magnetic Bottle Openers" class="product-img">
-          <div class="product-info">
-            <h3 class="product-title">Magnetic Bottle Openers</h3>
-            <p class="product-desc">Custom printed magnetic bottle openers — fun, functional and unique</p>
-            <a href="#" class="btn btn-outline">View Product</a>
-          </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="product-card">
-          <div class="product-badge badge-purple">3D</div>
-          <img src="images/image4.jpeg" alt="3D Printed Photo Frames" class="product-img">
-          <div class="product-info">
-            <h3 class="product-title">3D Printed Photo Frames</h3>
-            <p class="product-desc">Stunning 3D printed frames that make your photos truly stand out</p>
-            <a href="#" class="btn btn-outline">View Product</a>
-          </div>
-        </div>
-
-        <!-- Product 5 -->
-        <div class="product-card">
-          <div class="product-badge badge-neutral">Bulk Available</div>
-          <img src="images/image5.jpeg" alt="Acrylic & Family Frames" class="product-img">
-          <div class="product-info">
-            <h3 class="product-title">Acrylic & Family Frames</h3>
-            <p class="product-desc">Premium acrylic frames for families, weddings and special occasions</p>
-            <a href="#" class="btn btn-outline">View Product</a>
-          </div>
-        </div>
-
-        <!-- Product 6 -->
-        <div class="product-card">
-          <div class="product-badge badge-neutral">Save More</div>
-          <img src="images/image0 (1).jpeg" alt="Bulk & Wholesale" class="product-img">
-          <div class="product-info">
-            <h3 class="product-title">Bulk & Wholesale</h3>
-            <p class="product-desc">Order in bulk for events, corporate gifts or wholesale</p>
-            <a href="#" class="btn btn-outline">View Product</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 5 — HOW IT WORKS -->
-  <section class="how-it-works-section fade-in-up">
-    <div class="container">
-      <h2 class="section-title">Simple as 1-2-3</h2>
-      <p class="section-subtitle">From your phone to your fridge in three easy steps</p>
-
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-number">1</div>
-          <div class="step-icon">📸</div>
-          <h3 class="step-title">Upload Your Photo</h3>
-          <p class="step-desc">Choose your favorite photo from your phone or computer</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">2</div>
-          <div class="step-icon">🎨</div>
-          <h3 class="step-title">Pick Your Product</h3>
-          <p class="step-desc">Select the size, style and quantity that's right for you</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">3</div>
-          <div class="step-icon">📦</div>
-          <h3 class="step-title">We Print & Ship</h3>
-          <p class="step-desc">We carefully print and ship your order in 3–5 business days</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 6 — PHOTO SHOWCASE / GALLERY STRIP -->
-  <section class="gallery-section fade-in-up">
-    <div class="container text-center">
-      <h2 class="section-title">Made with Love, Displayed with Pride</h2>
-      <p class="section-subtitle">Real products from real customers</p>
-    </div>
-    <div class="gallery-strip">
-      <img src="images/image15.jpeg" alt="Gallery Photo 1" class="gallery-img">
-      <img src="images/image17.jpeg" alt="Gallery Photo 2" class="gallery-img">
-      <img src="images/image3.jpeg" alt="Gallery Photo 3" class="gallery-img">
-      <img src="images/image5.jpeg" alt="Gallery Photo 4" class="gallery-img">
-      <img src="images/image9.jpeg" alt="Gallery Photo 5" class="gallery-img">
-      <img src="images/image16.jpeg" alt="Gallery Photo 6" class="gallery-img">
-    </div>
-    <div class="container text-center mt-40">
-      <a href="#" class="btn btn-outline">See Full Gallery</a>
-    </div>
-  </section>
-
-  <!-- SECTION 7 — TESTIMONIALS -->
-  <section class="testimonials-section fade-in-up">
-    <div class="container">
-      <h2 class="section-title">What Our Customers Say</h2>
-      
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p class="quote">"The quality blew me away! The magnets are so vivid and sharp. My whole family loves them on the fridge!"</p>
-          <p class="author">Sarah M.</p>
-          <p class="author-role">Custom Photo Magnets</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p class="quote">"Ordered bulk magnets for our wedding favors. Every single guest loved them. Will order again!"</p>
-          <p class="author">Jessica & David</p>
-          <p class="author-role">Wedding Favors</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p class="quote">"The 3D MOM frame was the perfect Mother's Day gift. She cried happy tears! Absolutely beautiful."</p>
-          <p class="author">Amanda R.</p>
-          <p class="author-role">3D Photo Frame</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 8 — CTA BANNER -->
-  <section class="cta-section fade-in-up">
-    <div class="container text-center">
-      <h2 class="cta-title">Ready to Make Your Memories Last?</h2>
-      <p class="cta-subtitle">Turn your favorite photos into beautiful magnets today.</p>
-      <a href="#" class="btn btn-cta">Order Now</a>
-    </div>
-  </section>
-</main>
-
-<!-- Custom JS -->
-<script src="js/main.js"></script>
-
-<footer id="main-footer">
-  <!-- Top gradient border -->
-  <div class="footer-top-border"></div>
-
-  <div class="footer-container">
-    <!-- Column 1: Brand -->
-    <div class="footer-col footer-brand">
-      <img src="images/logo.png" alt="The Sticky Pixels" class="footer-logo">
-      <p class="footer-tagline">Every Pixel Tells a Story</p>
-      <p class="footer-desc">We turn your favorite memories into beautiful custom magnets you can hold forever.</p>
-      <div class="footer-socials">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Instagram">in</a>
-        <a href="#" aria-label="Pinterest">p</a>
-        <a href="#" aria-label="Etsy">e</a>
-      </div>
-    </div>
-
-    <!-- Column 2: Quick Links -->
-    <div class="footer-col">
-      <h4 class="footer-heading">Quick Links</h4>
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="how-it-works.html">How It Works</a></li>
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="3d-products.html">3D Products</a></li>
+        <li><a href="bulk-orders.html">Bulk Orders</a></li>
         <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
 
-    <!-- Column 3: Products -->
-    <div class="footer-col">
-      <h4 class="footer-heading">Our Products</h4>
-      <ul class="footer-links">
-        <li><a href="products.html">Custom Photo Magnets</a></li>
-        <li><a href="products.html">Flexible Photo Magnets</a></li>
-        <li><a href="products.html">Magnetic Bottle Openers</a></li>
-        <li><a href="bulk-orders.html">Acrylic Photo Frames</a></li>
-        <li><a href="bulk-orders.html">Magnetic Sheets 8.5x11</a></li>
-        <li><a href="3d-products.html">3D Printed Photo Frames</a></li>
-        <li><a href="3d-products.html">3D STL Files</a></li>
-      </ul>
-    </div>
-
-    <!-- Column 4: Contact & Newsletter -->
-    <div class="footer-col">
-      <h4 class="footer-heading">Get In Touch</h4>
-      <div class="footer-contact">
-        <p>📧 contact.thestickypixels@gmail.com</p>
-        <p>🕐 Mon–Fri, 9am–6pm EST</p>
-        <p>🌍 Ships Worldwide</p>
+      <!-- Right Icons -->
+      <div class="nav-icons">
+        <button class="icon-btn search-btn" aria-label="Search">🔍</button>
+        <button class="icon-btn cart-btn" aria-label="Cart">
+          🛒 <span class="cart-badge">0</span>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <div class="footer-newsletter">
-        <h5>Stay in the Loop</h5>
-        <p>Get deals, new products & inspiration.</p>
-        <div class="newsletter-form">
-          <input type="email" placeholder="Your email address">
-          <button type="button">Subscribe</button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="3d-products.html">3D Products</a></li>
+        <li><a href="bulk-orders.html">Bulk Orders</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-icons">
+        <button class="icon-btn">🔍</button>
+        <button class="icon-btn">🛒 <span class="cart-badge">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Spacer/Content to allow scrolling -->
+  <main>
+    <!-- SECTION 1 — HERO -->
+    <section class="hero-section fade-in-up">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">✨ Custom Photo Gifts</div>
+          <h1 class="hero-title">Turn Your Memories Into Magnets</h1>
+          <p class="hero-subtitle">Where your favorite moments become magnets you can hold onto forever. Premium
+            quality, vivid colors, made with love.</p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Shop Now</a>
+            <a href="#" class="btn btn-secondary">How It Works</a>
+          </div>
+          <div class="hero-trust">
+            <span>✅ Free Shipping on Orders $35+</span>
+            <span>✅ Ships in 3–5 Business Days</span>
+            <span>✅ 100% Satisfaction Guaranteed</span>
+          </div>
+        </div>
+        <div class="hero-images">
+          <img src="images/image15.jpeg" alt="Wedding magnets on easels" class="hero-img hero-img-main">
+          <img src="images/image17.jpeg" alt="Kids magnets" class="hero-img hero-img-tr">
+          <img src="images/image4.jpeg" alt="3D MOM frame" class="hero-img hero-img-bl">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — MARQUEE TRUST BAR -->
+    <section class="marquee-section fade-in-up">
+      <div class="marquee-container">
+        <div class="marquee-content">
+          ✦ Custom Photo Magnets &nbsp;&nbsp; ✦ Premium Quality Print &nbsp;&nbsp; ✦ Vivid Colors &nbsp;&nbsp; ✦ 3D
+          Photo Frames &nbsp;&nbsp; ✦ Magnetic Bottle Openers &nbsp;&nbsp; ✦ Bulk Orders Welcome &nbsp;&nbsp; ✦ Ships
+          Worldwide &nbsp;&nbsp;
+          <!-- Duplicate for infinite scroll loop -->
+          ✦ Custom Photo Magnets &nbsp;&nbsp; ✦ Premium Quality Print &nbsp;&nbsp; ✦ Vivid Colors &nbsp;&nbsp; ✦ 3D
+          Photo Frames &nbsp;&nbsp; ✦ Magnetic Bottle Openers &nbsp;&nbsp; ✦ Bulk Orders Welcome &nbsp;&nbsp; ✦ Ships
+          Worldwide &nbsp;&nbsp;
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — WHY CHOOSE US -->
+    <section class="features-section fade-in-up">
+      <div class="container">
+        <h2 class="section-title">Why Customers Love Us</h2>
+        <p class="section-subtitle">Every magnet is made with care, quality materials, and your memories in mind</p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3 class="feature-title">Vivid Color Printing</h3>
+            <p class="feature-desc">High-quality materials that make your photos pop with stunning detail</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">Fast Turnaround</h3>
+            <p class="feature-desc">Orders ship in 3–5 business days so you never wait too long</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📦</div>
+            <h3 class="feature-title">Ships Worldwide</h3>
+            <p class="feature-desc">We deliver your memories anywhere in the world with care</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💝</div>
+            <h3 class="feature-title">Made with Love</h3>
+            <p class="feature-desc">Small team, personal touch — every order matters to us</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — FEATURED PRODUCTS -->
+    <section class="products-section fade-in-up">
+      <div class="container">
+        <h2 class="section-title">Our Most Loved Products</h2>
+        <p class="section-subtitle">From fridge magnets to 3D frames — something for every memory</p>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-badge badge-orange">Best Seller</div>
+            <img src="images/image17.jpeg" alt="Custom Photo Magnets 2.5x2.5" class="product-img">
+            <div class="product-info">
+              <h3 class="product-title">Custom Photo Magnets 2.5x2.5</h3>
+              <p class="product-desc">Classic square magnets perfect for your fridge or office board</p>
+              <a href="#" class="btn btn-outline">View Product</a>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-badge badge-neutral">Multiple Sizes</div>
+            <img src="images/image15.jpeg" alt="Flexible Photo Magnets" class="product-img">
+            <div class="product-info">
+              <h3 class="product-title">Flexible Photo Magnets</h3>
+              <p class="product-desc">Available in 2.5x3.5, 3.25x4 and 5x7 — perfect for larger memories</p>
+              <a href="#" class="btn btn-outline">View Product</a>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-badge badge-neutral">Great Gift</div>
+            <img src="images/image11.jpeg" alt="Magnetic Bottle Openers" class="product-img">
+            <div class="product-info">
+              <h3 class="product-title">Magnetic Bottle Openers</h3>
+              <p class="product-desc">Custom printed magnetic bottle openers — fun, functional and unique</p>
+              <a href="#" class="btn btn-outline">View Product</a>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-badge badge-purple">3D</div>
+            <img src="images/image4.jpeg" alt="3D Printed Photo Frames" class="product-img">
+            <div class="product-info">
+              <h3 class="product-title">3D Printed Photo Frames</h3>
+              <p class="product-desc">Stunning 3D printed frames that make your photos truly stand out</p>
+              <a href="#" class="btn btn-outline">View Product</a>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="product-badge badge-neutral">Bulk Available</div>
+            <img src="images/image5.jpeg" alt="Acrylic & Family Frames" class="product-img">
+            <div class="product-info">
+              <h3 class="product-title">Acrylic & Family Frames</h3>
+              <p class="product-desc">Premium acrylic frames for families, weddings and special occasions</p>
+              <a href="#" class="btn btn-outline">View Product</a>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="product-badge badge-neutral">Save More</div>
+            <img src="images/image0 (1).jpeg" alt="Bulk & Wholesale" class="product-img">
+            <div class="product-info">
+              <h3 class="product-title">Bulk & Wholesale</h3>
+              <p class="product-desc">Order in bulk for events, corporate gifts or wholesale</p>
+              <a href="#" class="btn btn-outline">View Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — HOW IT WORKS -->
+    <section class="how-it-works-section fade-in-up">
+      <div class="container">
+        <h2 class="section-title">Simple as 1-2-3</h2>
+        <p class="section-subtitle">From your phone to your fridge in three easy steps</p>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-icon">📸</div>
+            <h3 class="step-title">Upload Your Photo</h3>
+            <p class="step-desc">Choose your favorite photo from your phone or computer</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-icon">🎨</div>
+            <h3 class="step-title">Pick Your Product</h3>
+            <p class="step-desc">Select the size, style and quantity that's right for you</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-icon">📦</div>
+            <h3 class="step-title">We Print & Ship</h3>
+            <p class="step-desc">We carefully print and ship your order in 3–5 business days</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 — PHOTO SHOWCASE / GALLERY STRIP -->
+    <section class="gallery-section fade-in-up">
+      <div class="container text-center">
+        <h2 class="section-title">Made with Love, Displayed with Pride</h2>
+        <p class="section-subtitle">Real products from real customers</p>
+      </div>
+      <div class="gallery-strip">
+        <img src="images/image15.jpeg" alt="Gallery Photo 1" class="gallery-img">
+        <img src="images/image17.jpeg" alt="Gallery Photo 2" class="gallery-img">
+        <img src="images/image3.jpeg" alt="Gallery Photo 3" class="gallery-img">
+        <img src="images/image5.jpeg" alt="Gallery Photo 4" class="gallery-img">
+        <img src="images/image9.jpeg" alt="Gallery Photo 5" class="gallery-img">
+        <img src="images/image16.jpeg" alt="Gallery Photo 6" class="gallery-img">
+      </div>
+      <div class="container text-center mt-40">
+        <a href="#" class="btn btn-outline">See Full Gallery</a>
+      </div>
+    </section>
+
+    <!-- SECTION 7 — TESTIMONIALS -->
+    <section class="testimonials-section fade-in-up">
+      <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="quote">"The quality blew me away! The magnets are so vivid and sharp. My whole family loves them
+              on the fridge!"</p>
+            <p class="author">Sarah M.</p>
+            <p class="author-role">Custom Photo Magnets</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="quote">"Ordered bulk magnets for our wedding favors. Every single guest loved them. Will order
+              again!"</p>
+            <p class="author">Jessica & David</p>
+            <p class="author-role">Wedding Favors</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="quote">"The 3D MOM frame was the perfect Mother's Day gift. She cried happy tears! Absolutely
+              beautiful."</p>
+            <p class="author">Amanda R.</p>
+            <p class="author-role">3D Photo Frame</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8 — CTA BANNER -->
+    <section class="cta-section fade-in-up">
+      <div class="container text-center">
+        <h2 class="cta-title">Ready to Make Your Memories Last?</h2>
+        <p class="cta-subtitle">Turn your favorite photos into beautiful magnets today.</p>
+        <a href="#" class="btn btn-cta">Order Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+  <footer id="main-footer">
+    <!-- Top gradient border -->
+    <div class="footer-top-border"></div>
+
+    <div class="footer-container">
+      <!-- Column 1: Brand -->
+      <div class="footer-col footer-brand">
+        <img src="images/logo.png" alt="The Sticky Pixels" class="footer-logo">
+        <p class="footer-tagline">Every Pixel Tells a Story</p>
+        <p class="footer-desc">We turn your favorite memories into beautiful custom magnets you can hold forever.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Pinterest">p</a>
+          <a href="#" aria-label="Etsy">e</a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Products -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Our Products</h4>
+        <ul class="footer-links">
+          <li><a href="products.html">Custom Photo Magnets</a></li>
+          <li><a href="products.html">Flexible Photo Magnets</a></li>
+          <li><a href="products.html">Magnetic Bottle Openers</a></li>
+          <li><a href="bulk-orders.html">Acrylic Photo Frames</a></li>
+          <li><a href="bulk-orders.html">Magnetic Sheets 8.5x11</a></li>
+          <li><a href="3d-products.html">3D Printed Photo Frames</a></li>
+          <li><a href="3d-products.html">3D STL Files</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact & Newsletter -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Get In Touch</h4>
+        <div class="footer-contact">
+          <p>📧 contact.thestickypixels@gmail.com</p>
+          <p>🕐 Mon–Fri, 9am–6pm EST</p>
+          <p>🌍 Ships Worldwide</p>
+        </div>
+        <div class="footer-newsletter">
+          <h5>Stay in the Loop</h5>
+          <p>Get deals, new products & inspiration.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="button">Subscribe</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Bottom Bar -->
-  <div class="footer-bottom">
-    <div class="footer-container">
-      <div>
-        <p>© 2026 The Sticky Pixels. All rights reserved.</p>
-        <p style="font-size: 12px; color: #8B6355; margin-top: 4px;">
-          Powered by <a href="#" style="color: #E8621A; text-decoration: none; font-weight: 600;">AdsNord</a>
-        </p>
-      </div>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <span>·</span>
-        <a href="#">Terms of Service</a>
-        <span>·</span>
-        <a href="#">Shipping Policy</a>
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <div>
+          <p>© 2026 The Sticky Pixels. All rights reserved.</p>
+          <p style="font-size: 12px; color: #8B6355; margin-top: 4px;">
+            Powered by <a href="https://adsnord.com/" target="_blank"
+              style="color: #E8621A; text-decoration: none; font-weight: 600;">AdsNord</a>
+          </p>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>·</span>
+          <a href="#">Terms of Service</a>
+          <span>·</span>
+          <a href="#">Shipping Policy</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
