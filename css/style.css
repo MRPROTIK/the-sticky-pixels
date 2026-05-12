@@ -1071,6 +1071,225 @@ body {
   }
 }
 
+/* --- CONTACT PAGE --- */
+.contact-main-section {
+    background: white;
+    padding: 100px 0;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 60px;
+}
+.contact-label {
+    font-size: 12px;
+    color: #E8621A;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.contact-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #2D1B0E;
+    margin-bottom: 16px;
+}
+.contact-subtext {
+    font-size: 16px;
+    color: #8B6355;
+    margin-bottom: 32px;
+}
+
+.contact-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.contact-form .form-group {
+  margin-bottom: 24px;
+}
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2D1B0E;
+  margin-bottom: 8px;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1.5px solid #E8D5C4;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #2D1B0E;
+  background: #FDFAF7;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #E8621A;
+  box-shadow: 0 0 0 3px rgba(232,98,26,0.1);
+}
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+.btn-submit {
+  width: 100%;
+  padding: 16px;
+  background: #E8621A;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+.btn-submit:hover {
+  background: #C44E0F;
+  transform: translateY(-2px);
+}
+
+.contact-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px;
+  background: #FDF8F3;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #F0E4D7;
+  transition: box-shadow 0.3s ease;
+}
+.contact-info-card:hover {
+  box-shadow: 0 8px 30px rgba(232,98,26,0.1);
+}
+.contact-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(232,98,26,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.contact-info-card h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #E8621A;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.contact-info-card p {
+  font-size: 15px;
+  color: #2D1B0E;
+  margin-bottom: 4px;
+}
+.contact-info-card span {
+  font-size: 13px;
+  color: #8B6355;
+}
+.contact-socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+.social-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(232,98,26,0.3);
+    color: #E8621A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.social-circle:hover {
+    background: #E8621A;
+    color: white;
+}
+
+/* FAQ section */
+.faq-teaser-section {
+    background: #F5EDE0;
+    padding: 80px 0;
+}
+.accordion-container {
+    max-width: 800px;
+    margin: 40px auto 0;
+    text-align: left;
+}
+.accordion-item {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+.accordion-header {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+}
+.accordion-header h3 {
+    font-size: 16px;
+    color: #2D1B0E;
+    font-weight: 600;
+    margin: 0;
+}
+.accordion-arrow {
+    color: #E8621A;
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+.accordion-content {
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.accordion-content p {
+    color: #8B6355;
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: 24px;
+}
+.accordion-item.open .accordion-content {
+    max-height: 200px;
+}
+.accordion-item.open .accordion-arrow {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+  .contact-form .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* --- GLOBAL UTILITIES --- */
 .container {
     max-width: 1200px;

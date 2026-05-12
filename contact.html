@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — The Sticky Pixels</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: #FDF8F3;">
+
+  <header id="main-header">
+    <!-- Aurora background blobs -->
+    <div class="aurora-blob blob-1"></div>
+    <div class="aurora-blob blob-2"></div>
+    <div class="aurora-blob blob-3"></div>
+
+    <!-- Glass nav container -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="The Sticky Pixels Logo">
+      </div>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="3d-products.html">3D Products</a></li>
+        <li><a href="bulk-orders.html">Bulk Orders</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="nav-icons">
+        <button class="icon-btn search-btn" aria-label="Search">🔍</button>
+        <button class="icon-btn cart-btn" aria-label="Cart">
+          🛒 <span class="cart-badge">0</span>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="3d-products.html">3D Products</a></li>
+        <li><a href="bulk-orders.html">Bulk Orders</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-icons">
+        <button class="icon-btn">🔍</button>
+        <button class="icon-btn">🛒 <span class="cart-badge">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1 — PAGE HERO BANNER -->
+    <section class="page-hero-banner fade-in-up">
+      <div class="container text-center">
+        <div class="breadcrumb">Home > Contact</div>
+        <h1 class="page-title">Get In Touch</h1>
+        <p class="page-subtitle">We'd love to hear from you — questions, custom orders, or just to say hello!</p>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — CONTACT MAIN -->
+    <section class="contact-main-section fade-in-up">
+      <div class="container contact-grid">
+        <!-- LEFT COLUMN (55%) — Contact Form -->
+        <div class="contact-form-wrap">
+          <div class="contact-label">SEND US A MESSAGE</div>
+          <h2 class="contact-heading">We're Here to Help</h2>
+          <p class="contact-subtext">Fill out the form below and we'll get back to you within 24 hours.</p>
+          
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="John">
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Doe">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <select>
+                <option>General Inquiry</option>
+                <option>Custom Order</option>
+                <option>Bulk Order</option>
+                <option>3D Products</option>
+                <option>Order Status</option>
+                <option>Returns & Refunds</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="6" placeholder="Tell us how we can help you..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+
+        <!-- RIGHT COLUMN (45%) — Contact Info -->
+        <div class="contact-info-wrap">
+          <div class="contact-label">CONTACT INFORMATION</div>
+          <h2 class="contact-heading">Reach Out Anytime</h2>
+          <p class="contact-subtext">We typically respond within 24 hours on business days.</p>
+          
+          <div class="contact-info-card">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h4>Email Us</h4>
+              <p><a href="mailto:contact.thestickypixels@gmail.com" style="color: inherit; text-decoration: none;">contact.thestickypixels@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Monday – Friday, 9am – 6pm EST</p>
+              <span>Weekend responses may be delayed</span>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">🌍</div>
+            <div>
+              <h4>We Ship Worldwide</h4>
+              <p>Orders ship in 3–5 business days</p>
+              <span>Free shipping on orders $35+</span>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">💬</div>
+            <div>
+              <h4>Follow Us</h4>
+              <div class="contact-socials">
+                <a href="#" aria-label="Facebook" class="social-circle">f</a>
+                <a href="#" aria-label="Instagram" class="social-circle">in</a>
+                <a href="#" aria-label="Pinterest" class="social-circle">p</a>
+                <a href="#" aria-label="Etsy" class="social-circle">e</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — FAQ TEASER -->
+    <section class="faq-teaser-section fade-in-up">
+      <div class="container text-center">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Quick answers to common questions</p>
+        
+        <div class="accordion-container mt-40">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>How long does shipping take?</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <p>Orders typically ship within 3–5 business days. Expedited options may be available — contact us for details.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Can I order in bulk?</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <p>Absolutely! We offer bulk pricing for events, weddings, corporate gifts and more. Use the contact form above or visit our Bulk Orders page.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>What file format should I use for my photo?</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <p>We accept JPG, PNG and PDF files. For best results, use a high-resolution photo (at least 300 DPI).</p>
+            </div>
+          </div>
+        </div>
+        
+        <a href="faq.html" class="btn btn-outline mt-40">View All FAQs</a>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — CTA BANNER -->
+    <section class="cta-section fade-in-up">
+      <div class="container text-center">
+        <h2 class="cta-title">Ready to Create Something Beautiful?</h2>
+        <p class="cta-subtitle">Browse our products and start your custom order today</p>
+        <a href="products.html" class="btn btn-cta">Shop Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+  <footer id="main-footer">
+    <!-- Top gradient border -->
+    <div class="footer-top-border"></div>
+
+    <div class="footer-container">
+      <!-- Column 1: Brand -->
+      <div class="footer-col footer-brand">
+        <img src="images/logo.png" alt="The Sticky Pixels" class="footer-logo">
+        <p class="footer-tagline">Every Pixel Tells a Story</p>
+        <p class="footer-desc">We turn your favorite memories into beautiful custom magnets you can hold forever.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Pinterest">p</a>
+          <a href="#" aria-label="Etsy">e</a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Products -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Our Products</h4>
+        <ul class="footer-links">
+          <li><a href="products.html">Custom Photo Magnets</a></li>
+          <li><a href="products.html">Flexible Photo Magnets</a></li>
+          <li><a href="products.html">Magnetic Bottle Openers</a></li>
+          <li><a href="bulk-orders.html">Acrylic Photo Frames</a></li>
+          <li><a href="bulk-orders.html">Magnetic Sheets 8.5x11</a></li>
+          <li><a href="3d-products.html">3D Printed Photo Frames</a></li>
+          <li><a href="3d-products.html">3D STL Files</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact & Newsletter -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Get In Touch</h4>
+        <div class="footer-contact">
+          <p>📧 contact.thestickypixels@gmail.com</p>
+          <p>🕐 Mon–Fri, 9am–6pm EST</p>
+          <p>🌍 Ships Worldwide</p>
+        </div>
+        <div class="footer-newsletter">
+          <h5>Stay in the Loop</h5>
+          <p>Get deals, new products & inspiration.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <div>
+          <p>© 2026 The Sticky Pixels. All rights reserved.</p>
+          <p style="font-size: 12px; color: #8B6355; margin-top: 4px;">
+            Powered by <a href="https://adsnord.com/" target="_blank"
+              style="color: #E8621A; text-decoration: none; font-weight: 600;">AdsNord</a>
+          </p>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>·</span>
+          <a href="#">Terms of Service</a>
+          <span>·</span>
+          <a href="#">Shipping Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
