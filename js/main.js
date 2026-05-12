@@ -26,4 +26,25 @@ document.addEventListener('DOMContentLoaded', () => {
             mobileMenu.classList.remove('active');
         });
     });
+
+    // Fade-in animations on scroll
+    const fadeElements = document.querySelectorAll('.fade-in-up');
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+    
+    const fadeObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    fadeElements.forEach(el => {
+        fadeObserver.observe(el);
+    });
 });
