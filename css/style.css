@@ -2127,6 +2127,24 @@ body {
   }
 }
 
+/* --- POLICY PAGES --- */
+.policy-content {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #5C3D2E;
+}
+.policy-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: #2D1B0E;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.policy-content p {
+  margin-bottom: 20px;
+}
+
 /* --- GLOBAL UTILITIES --- */
 .container {
     max-width: 1200px;
