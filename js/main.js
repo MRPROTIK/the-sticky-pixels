@@ -1,28 +1,23 @@
 // Hamburger Menu
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
+const closeBtn = document.getElementById('mobile-menu-close');
+
+function closeMenu() {
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+}
 
 if (hamburger && mobileMenu) {
-
-  // Add close button inside mobile menu
-  const closeBtn = document.createElement('button');
-  closeBtn.className = 'mobile-menu-close';
-  closeBtn.innerHTML = '✕';
-  closeBtn.setAttribute('aria-label', 'Close menu');
-  mobileMenu.appendChild(closeBtn);
-
-  function closeMenu() {
-    hamburger.classList.remove('open');
-    mobileMenu.classList.remove('open');
-  }
-
   hamburger.addEventListener('click', function (e) {
     e.stopPropagation();
     hamburger.classList.toggle('open');
     mobileMenu.classList.toggle('open');
   });
 
-  closeBtn.addEventListener('click', closeMenu);
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeMenu);
+  }
 
   mobileMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', closeMenu);
@@ -46,19 +41,20 @@ fadeEls.forEach(el => observer.observe(el));
 
 // Header scroll effect
 const header = document.getElementById('main-header');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 20) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
+if (header) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+}
 
 // Accordion
-document.querySelectorAll('.accordion-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const item = header.parentElement;
-    item.classList.toggle('open');
+document.querySelectorAll('.accordion-header').forEach(h => {
+  h.addEventListener('click', () => {
+    h.parentElement.classList.toggle('open');
   });
 });
 
