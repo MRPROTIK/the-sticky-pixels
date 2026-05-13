@@ -48,36 +48,39 @@ body {
 
 /* Aurora Background Blobs */
 .aurora-blob {
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     filter: blur(60px);
-    opacity: 0.6;
+    opacity: 0.4;
     z-index: -1;
     pointer-events: none;
     animation: aurora-drift 12s infinite alternate ease-in-out;
+    top: -150px;
+    max-height: 200px;
+    overflow: hidden;
 }
 
 .blob-1 {
-    width: 400px;
-    height: 400px;
-    background-color: #FF6B35; /* Warm orange-red */
+    width: 300px;
+    height: 200px;
+    background-color: #FF6B35;
     top: -100px;
     left: -80px;
 }
 
 .blob-2 {
-    width: 400px;
-    height: 400px;
-    background-color: #F7C948; /* Golden yellow */
+    width: 300px;
+    height: 200px;
+    background-color: #F7C948;
     top: -80px;
     left: 35%;
     animation-delay: -2s;
 }
 
 .blob-3 {
-    width: 400px;
-    height: 400px;
-    background-color: #D4A5F5; /* Soft lavender purple */
+    width: 300px;
+    height: 200px;
+    background-color: #D4A5F5;
     top: -100px;
     right: -80px;
     animation-delay: -4s;
