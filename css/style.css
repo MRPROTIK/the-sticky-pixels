@@ -240,8 +240,32 @@ body {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(16px);
     z-index: 99999;
-    padding: 90px 32px 32px;
+    padding: 80px 32px 32px;
     overflow-y: auto;
+}
+
+.mobile-menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    background: #F5EDE0;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2D1B0E;
+    transition: background 0.2s ease;
+    z-index: 100000;
+}
+
+.mobile-menu-close:hover {
+    background: #E8621A;
+    color: white;
 }
 .mobile-menu.open {
     display: block;

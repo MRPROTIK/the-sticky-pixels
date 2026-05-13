@@ -3,23 +3,34 @@ const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 
 if (hamburger && mobileMenu) {
+
+  // Add close button inside mobile menu
+  const closeBtn = document.createElement('button');
+  closeBtn.className = 'mobile-menu-close';
+  closeBtn.innerHTML = '✕';
+  closeBtn.setAttribute('aria-label', 'Close menu');
+  mobileMenu.appendChild(closeBtn);
+
+  function closeMenu() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  }
+
   hamburger.addEventListener('click', function (e) {
     e.stopPropagation();
     hamburger.classList.toggle('open');
     mobileMenu.classList.toggle('open');
   });
 
+  closeBtn.addEventListener('click', closeMenu);
+
   mobileMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('open');
-      mobileMenu.classList.remove('open');
-    });
+    link.addEventListener('click', closeMenu);
   });
 
   document.addEventListener('click', function (e) {
     if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
-      hamburger.classList.remove('open');
-      mobileMenu.classList.remove('open');
+      closeMenu();
     }
   });
 }
