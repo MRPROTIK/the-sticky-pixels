@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Photo Products — The Sticky Pixels</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: #FDF8F3;">
+
+  <header id="main-header">
+    <!-- Aurora background blobs -->
+    <div class="aurora-blob blob-1"></div>
+    <div class="aurora-blob blob-2"></div>
+    <div class="aurora-blob blob-3"></div>
+
+    <!-- Glass nav container -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="The Sticky Pixels Logo">
+      </div>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="3d-products.html" class="active">3D Products</a></li>
+        <li><a href="bulk-orders.html">Bulk Orders</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="nav-icons">
+        <button class="icon-btn search-btn" aria-label="Search">🔍</button>
+        <button class="icon-btn cart-btn" aria-label="Cart">
+          🛒 <span class="cart-badge">0</span>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="3d-products.html">3D Products</a></li>
+        <li><a href="bulk-orders.html">Bulk Orders</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-icons">
+        <button class="icon-btn">🔍</button>
+        <button class="icon-btn">🛒 <span class="cart-badge">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1 — PAGE HERO BANNER -->
+    <section class="page-hero-banner fade-in-up">
+      <div class="container text-center">
+        <div class="breadcrumb">Home > 3D Products</div>
+        <h1 class="page-title">3D Photo Products</h1>
+        <p class="page-subtitle">The future of photo frames — stunning 3D printed designs that make your memories truly stand out</p>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — INTRO TWO COLUMN -->
+    <section class="bulk-intro-section fade-in-up">
+      <div class="container">
+        <div class="bulk-intro-grid">
+          <div class="bulk-intro-content">
+            <div class="contact-label">WHAT IS 3D PRINTING?</div>
+            <h2 class="contact-heading">Where Technology Meets Memory</h2>
+            <p class="contact-subtext" style="margin-bottom: 16px; color: #5C3D2E; line-height: 1.8;">Our 3D printed photo frames are created using state-of-the-art 3D printing technology. Each frame is designed with precision and printed layer by layer to create stunning, unique pieces that display your photos in a way traditional frames simply can't match.</p>
+            <p class="contact-subtext" style="margin-bottom: 24px; color: #5C3D2E; line-height: 1.8;">From MOM frames to FAMILY displays, our 3D products make the perfect gift for any occasion. Choose from our ready-made designs or download our STL files to print your own at home.</p>
+            <ul class="bulk-benefits-list">
+              <li><span>🖨️</span> Precision 3D printing technology</li>
+              <li><span>🎨</span> Available in multiple colors</li>
+              <li><span>📐</span> Custom designs available on request</li>
+            </ul>
+            <a href="#products" class="btn btn-primary mt-40">Shop 3D Products</a>
+          </div>
+          <div class="bulk-intro-image-wrap">
+            <img src="images/image4.jpeg" alt="3D Printing" class="bulk-intro-img">
+            <div class="bulk-floating-badge">
+              <strong>🖨️ 3D Printed</strong>
+              <span>Made to Order</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — PRODUCT SHOWCASE -->
+    <section id="products" class="bulk-products-section fade-in-up">
+      <div class="container">
+        <div class="text-center mb-60">
+          <h2 class="section-title" style="font-family: 'Playfair Display', serif; font-size: 42px;">Our 3D Products</h2>
+          <p class="section-subtitle">Handcrafted 3D printed frames for every occasion</p>
+        </div>
+        
+        <!-- Product 1 -->
+        <div class="product-feature-card">
+          <div class="product-feature-img">
+            <img src="images/image4.jpeg" alt="3D Printed Photo Frames" loading="lazy">
+          </div>
+          <div class="product-feature-body">
+            <span class="bulk-badge badge-orange">Most Popular</span>
+            <h3 class="product-feature-title">3D Printed Photo Frames</h3>
+            <p class="bulk-card-desc">Our signature 3D printed photo frames are created with precision and care. Each frame is printed to order in your choice of color and style. Perfect for gifts, home decor, and special occasions.</p>
+            
+            <h4 style="font-size: 14px; font-weight: 700; color: #2D1B0E; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">Available Designs</h4>
+            <ul class="bulk-features">
+              <li>🔴 MOM Frame — holds 1-2 photos</li>
+              <li>⬛ FAMILY Frame — holds 3 photos</li>
+              <li>💛 LOVE Frame — holds 1 photo</li>
+              <li>💙 BEST MOM Frame — holds 2 photos</li>
+              <li>🟢 Custom Text — contact us</li>
+            </ul>
+            
+            <div class="color-options-wrap">
+              <span style="font-size: 13px; font-weight: 700; color: #8B6355; margin-right: 12px;">Available Colors:</span>
+              <div class="color-options">
+                <div class="color-dot" style="background: #FF4444;" title="Red"></div>
+                <div class="color-dot" style="background: #1C1C1C;" title="Black"></div>
+                <div class="color-dot" style="background: #F5F5F5;" title="White"></div>
+                <div class="color-dot" style="background: #4A90D9;" title="Blue"></div>
+                <div class="color-dot" style="background: #FF6B9D;" title="Pink"></div>
+              </div>
+            </div>
+            
+            <div class="product-price" style="font-family: 'Playfair Display', serif; font-size: 28px; color: #E8621A; margin: 24px 0;">From $24.99</div>
+            
+            <div style="display: flex; gap: 16px;">
+              <button class="btn btn-primary" style="flex: 1;">Order Now</button>
+              <button class="btn btn-outline" style="flex: 1;">Contact for Custom</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-feature-card reverse">
+          <div class="product-feature-img">
+            <img src="images/image3.jpeg" alt="3D Photo Frame STL Files" loading="lazy">
+          </div>
+          <div class="product-feature-body">
+            <span class="bulk-badge" style="background: rgba(124, 58, 237, 0.1); color: #7C3AED;">Digital Download</span>
+            <h3 class="product-feature-title">3D Photo Frame STL Files</h3>
+            <p class="bulk-card-desc">Do you own a 3D printer? Download our STL files and print your own photo frames at home! Each file is optimized for easy printing and comes with basic printing instructions.</p>
+            
+            <h4 style="font-size: 14px; font-weight: 700; color: #2D1B0E; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">What's Included</h4>
+            <ul class="bulk-features">
+              <li>✅ High quality STL file</li>
+              <li>✅ Multiple frame sizes included</li>
+              <li>✅ Basic printing instructions PDF</li>
+              <li>✅ Commercial use license</li>
+              <li>✅ Free updates when available</li>
+            </ul>
+            
+            <div style="font-size: 14px; color: #5C3D2E; margin-top: 16px; background: #FDF8F3; padding: 12px 16px; border-radius: 8px;">
+              <strong>Compatible with:</strong> Creality, Prusa, Bambu Lab, Anycubic and most FDM printers
+            </div>
+            
+            <div class="product-price" style="font-family: 'Playfair Display', serif; font-size: 28px; color: #7C3AED; margin: 24px 0;">From $4.99</div>
+            
+            <div style="display: flex; gap: 16px;">
+              <button class="btn btn-primary" style="flex: 1; background: #7C3AED;">Download STL File</button>
+              <button class="btn btn-outline" style="flex: 1; border-color: #7C3AED; color: #7C3AED;">View Sample</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4 — GALLERY STRIP -->
+    <section class="gallery-strip-section fade-in-up" style="background: #F5EDE0; padding: 100px 0;">
+      <div class="container text-center">
+        <h2 class="section-title" style="font-family: 'Playfair Display', serif; font-size: 38px; margin-bottom: 40px;">3D Products in Action</h2>
+        
+        <div class="gallery-strip">
+          <div class="gallery-strip-item">
+            <img src="images/image4.jpeg" alt="3D Frame" loading="lazy">
+          </div>
+          <div class="gallery-strip-item">
+            <img src="images/image3.jpeg" alt="3D Frame" loading="lazy">
+          </div>
+          <div class="gallery-strip-item">
+            <img src="images/image5.jpeg" alt="3D Frame" loading="lazy">
+          </div>
+          <div class="gallery-strip-item">
+            <img src="images/image14.jpeg" alt="3D Frame" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — HOW TO ORDER -->
+    <section class="how-to-order-section fade-in-up" style="background: white; padding: 100px 0;">
+      <div class="container text-center">
+        <h2 class="section-title" style="font-family: 'Playfair Display', serif; font-size: 38px;">How to Order Your 3D Frame</h2>
+        
+        <div class="order-steps-grid mt-60">
+          <div class="order-step">
+            <div class="order-step-num">1</div>
+            <div class="order-step-icon">🎨</div>
+            <h3 class="order-step-title">Choose Your Design</h3>
+            <p class="order-step-desc">Browse our available designs and pick the one that suits your occasion</p>
+          </div>
+          <div class="order-step">
+            <div class="order-step-num">2</div>
+            <div class="order-step-icon">📸</div>
+            <h3 class="order-step-title">Send Your Photo</h3>
+            <p class="order-step-desc">Email us your photo at contact.thestickypixels@gmail.com</p>
+          </div>
+          <div class="order-step">
+            <div class="order-step-num">3</div>
+            <div class="order-step-icon">🖨️</div>
+            <h3 class="order-step-title">We Print It</h3>
+            <p class="order-step-desc">Our team prints your frame with precision and quality</p>
+          </div>
+          <div class="order-step">
+            <div class="order-step-num">4</div>
+            <div class="order-step-icon">📦</div>
+            <h3 class="order-step-title">We Ship It</h3>
+            <p class="order-step-desc">Your 3D frame is carefully packed and shipped in 3-5 business days</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 — FAQ -->
+    <section class="faq-teaser-section fade-in-up" style="background: #FDF8F3;">
+      <div class="container text-center">
+        <h2 class="section-title" style="font-family: 'Playfair Display', serif; font-size: 38px;">3D Products FAQ</h2>
+        
+        <div class="accordion-container mt-40">
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>What colors are available?</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <p>We currently offer Red, Black, White, Blue and Pink. Custom colors may be available on request — contact us for details.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>How long does printing take?</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <p>Each frame is printed to order. Production takes 2-3 days, plus 3-5 days for shipping.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>Can I request a custom design?</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <p>Absolutely! Contact us at contact.thestickypixels@gmail.com with your idea and we'll discuss options.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <h3>What size photos do the frames hold?</h3>
+              <span class="accordion-arrow">▼</span>
+            </div>
+            <div class="accordion-content">
+              <p>Our frames are designed to hold standard 2x2 and 2.5x3.5 inch magnets. Contact us for custom sizing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 — CTA BANNER -->
+    <section class="cta-section fade-in-up">
+      <div class="container text-center">
+        <h2 class="cta-title">Ready to Create Your 3D Masterpiece?</h2>
+        <p class="cta-subtitle">Order a custom 3D frame today or download our STL files to print your own</p>
+        <div class="cta-buttons" style="display: flex; gap: 16px; justify-content: center; margin-top: 32px;">
+            <a href="contact.html" class="btn btn-cta">Order Now</a>
+            <a href="products.html" class="btn btn-outline" style="border-color: white; color: white;">Download STL</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+  <footer id="main-footer">
+    <!-- Top gradient border -->
+    <div class="footer-top-border"></div>
+
+    <div class="footer-container">
+      <!-- Column 1: Brand -->
+      <div class="footer-col footer-brand">
+        <img src="images/logo.png" alt="The Sticky Pixels" class="footer-logo">
+        <p class="footer-tagline">Every Pixel Tells a Story</p>
+        <p class="footer-desc">We turn your favorite memories into beautiful custom magnets you can hold forever.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Pinterest">p</a>
+          <a href="#" aria-label="Etsy">e</a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Products -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Our Products</h4>
+        <ul class="footer-links">
+          <li><a href="products.html">Custom Photo Magnets</a></li>
+          <li><a href="products.html">Flexible Photo Magnets</a></li>
+          <li><a href="products.html">Magnetic Bottle Openers</a></li>
+          <li><a href="bulk-orders.html">Acrylic Photo Frames</a></li>
+          <li><a href="bulk-orders.html">Magnetic Sheets 8.5x11</a></li>
+          <li><a href="3d-products.html">3D Printed Photo Frames</a></li>
+          <li><a href="3d-products.html">3D STL Files</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact & Newsletter -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Get In Touch</h4>
+        <div class="footer-contact">
+          <p>📧 contact.thestickypixels@gmail.com</p>
+          <p>🕐 Mon–Fri, 9am–6pm EST</p>
+          <p>🌍 Ships Worldwide</p>
+        </div>
+        <div class="footer-newsletter">
+          <h5>Stay in the Loop</h5>
+          <p>Get deals, new products & inspiration.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <div>
+          <p>© 2026 The Sticky Pixels. All rights reserved.</p>
+          <p style="font-size: 12px; color: #8B6355; margin-top: 4px;">
+            Powered by <a href="https://adsnord.com/" target="_blank"
+              style="color: #E8621A; text-decoration: none; font-weight: 600;">AdsNord</a>
+          </p>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>·</span>
+          <a href="#">Terms of Service</a>
+          <span>·</span>
+          <a href="#">Shipping Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
