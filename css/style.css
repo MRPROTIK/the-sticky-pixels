@@ -48,7 +48,7 @@ body {
 
 /* Aurora Background Blobs */
 .aurora-blob {
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     filter: blur(60px);
     opacity: 0.6;
