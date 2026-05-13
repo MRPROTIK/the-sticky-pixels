@@ -2728,3 +2728,11 @@ body {
     z-index: 99999 !important;
     position: fixed !important;
 }
+
+@media (max-width: 900px) {
+    .nav-links { display: none !important; }
+    .nav-icons { display: flex !important; visibility: visible !important; opacity: 1 !important; }
+    .hamburger { display: flex !important; visibility: visible !important; opacity: 1 !important; width: 36px !important; height: 36px !important; background: none !important; border: none !important; cursor: pointer !important; flex-direction: column !important; justify-content: center !important; gap: 5px !important; padding: 4px !important; }
+    .hamburger span { display: block !important; width: 22px !important; height: 2px !important; background: #2D1B0E !important; border-radius: 2px !important; }
+    .navbar { display: flex !important; justify-content: space-between !important; align-items: center !important; width: 100% !important; }
+}
