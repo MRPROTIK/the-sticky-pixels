@@ -18,14 +18,14 @@ body {
 
 /* Header Styles */
 #main-header {
-    position: relative;
+    position: fixed;
     top: 8px;
     left: 0;
     margin: 0 16px;
     width: calc(100% - 32px);
     height: 90px;
     z-index: 9999;
-    overflow: visible;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
