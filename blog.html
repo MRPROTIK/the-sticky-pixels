@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — The Sticky Pixels</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: #FDF8F3;">
+
+  <header id="main-header">
+    <!-- Aurora background blobs -->
+    <div class="aurora-blob blob-1"></div>
+    <div class="aurora-blob blob-2"></div>
+    <div class="aurora-blob blob-3"></div>
+
+    <!-- Glass nav container -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="The Sticky Pixels Logo">
+      </div>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="3d-products.html">3D Products</a></li>
+        <li><a href="bulk-orders.html">Bulk Orders</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Right Icons -->
+      <div class="nav-icons">
+        <button class="icon-btn search-btn" aria-label="Search">🔍</button>
+        <button class="icon-btn cart-btn" aria-label="Cart">
+          🛒 <span class="cart-badge">0</span>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="3d-products.html">3D Products</a></li>
+        <li><a href="bulk-orders.html">Bulk Orders</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-icons">
+        <button class="icon-btn">🔍</button>
+        <button class="icon-btn">🛒 <span class="cart-badge">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1 — PAGE HERO BANNER -->
+    <section class="page-hero-banner fade-in-up">
+      <div class="container text-center">
+        <div class="breadcrumb">Home > Blog</div>
+        <h1 class="page-title">Memory Tips & Inspiration</h1>
+        <p class="page-subtitle">Ideas, tips and stories to help you preserve and display your favorite memories</p>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — FEATURED POST -->
+    <section class="featured-post-section fade-in-up" style="background: white; padding: 80px 0 40px;">
+      <div class="container" style="max-width: 1200px;">
+        <div class="product-feature-card">
+          <div class="product-feature-img">
+            <img src="images/image15.jpeg" alt="Featured Post" style="height: 420px; object-fit: cover; border-radius: 20px;" loading="lazy">
+          </div>
+          <div class="product-feature-body">
+            <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 16px;">
+              <span class="bulk-badge badge-orange" style="margin-bottom: 0;">Featured Post</span>
+              <span style="font-size: 12px; font-weight: 700; color: #E8621A; text-transform: uppercase; letter-spacing: 1.5px;">Gift Ideas</span>
+            </div>
+            <h3 class="product-feature-title" style="font-size: 36px;">10 Unique Ways to Display Your Photo Magnets at Home</h3>
+            <p class="bulk-card-desc">Photo magnets aren't just for fridges anymore! Discover creative and beautiful ways to display your custom photo magnets throughout your home, from gallery walls to office boards.</p>
+            <div class="blog-meta" style="margin-bottom: 24px;">
+              <span>📅 May 10, 2026</span>
+              <span>·</span>
+              <span>⏱️ 5 min read</span>
+            </div>
+            <div>
+              <a href="#" class="btn btn-primary" style="border-radius: 50px;">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — CATEGORIES SIDEBAR STRIP -->
+    <section class="blog-categories-strip fade-in-up" style="background: white; padding: 0 0 60px;">
+      <div class="container">
+        <div class="filter-tabs">
+          <button class="filter-tab active">All Posts</button>
+          <button class="filter-tab">Gift Ideas</button>
+          <button class="filter-tab">3D Products</button>
+          <button class="filter-tab">Events</button>
+          <button class="filter-tab">Tips</button>
+          <button class="filter-tab">Behind the Scenes</button>
+          <button class="filter-tab">Products</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — BLOG GRID -->
+    <section class="blog-grid-section fade-in-up" style="background: #FDF8F3; padding: 40px 0 80px;">
+      <div class="container">
+        <h2 class="section-title text-center" style="font-family: 'Playfair Display', serif; font-size: 38px; margin-bottom: 40px;">Latest Articles</h2>
+        
+        <div class="blog-grid">
+          <!-- Post 1 -->
+          <article class="blog-card">
+            <div class="blog-card-img">
+              <img src="images/image17.jpeg" alt="Blog Post" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-category">Gift Ideas</div>
+              <h3 class="blog-title">The Perfect Gift: Why Photo Magnets Beat Traditional Presents</h3>
+              <p class="blog-excerpt">Tired of giving the same old gifts? Find out why custom photo magnets are the most personal and memorable gifts you can give.</p>
+              <div class="blog-meta">📅 May 5, 2026 · ⏱️ 4 min read</div>
+              <a href="#" class="btn-read-more">Read More</a>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="blog-card">
+            <div class="blog-card-img">
+              <img src="images/image4.jpeg" alt="Blog Post" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-category">3D Products</div>
+              <h3 class="blog-title">3D Printed Photo Frames: The Future of Memory Keeping</h3>
+              <p class="blog-excerpt">Explore how 3D printing technology is revolutionizing the way we display our favorite photos and memories.</p>
+              <div class="blog-meta">📅 April 28, 2026 · ⏱️ 6 min read</div>
+              <a href="#" class="btn-read-more">Read More</a>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="blog-card">
+            <div class="blog-card-img">
+              <img src="images/image11.jpeg" alt="Blog Post" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-category">Products</div>
+              <h3 class="blog-title">Magnetic Bottle Openers: The Fun Gift Everyone Loves</h3>
+              <p class="blog-excerpt">Custom magnetic bottle openers are the perfect combination of function and fun. Here's why everyone loves them.</p>
+              <div class="blog-meta">📅 April 20, 2026 · ⏱️ 3 min read</div>
+              <a href="#" class="btn-read-more">Read More</a>
+            </div>
+          </article>
+
+          <!-- Post 4 -->
+          <article class="blog-card">
+            <div class="blog-card-img">
+              <img src="images/image5.jpeg" alt="Blog Post" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-category">Events</div>
+              <h3 class="blog-title">How to Use Custom Magnets as Wedding Favors Your Guests Will Keep</h3>
+              <p class="blog-excerpt">Wedding favors often end up in the trash. Not photo magnets! Discover why they're the most kept wedding favor of all time.</p>
+              <div class="blog-meta">📅 April 15, 2026 · ⏱️ 5 min read</div>
+              <a href="#" class="btn-read-more">Read More</a>
+            </div>
+          </article>
+
+          <!-- Post 5 -->
+          <article class="blog-card">
+            <div class="blog-card-img">
+              <img src="images/image19.jpeg" alt="Blog Post" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-category">Behind the Scenes</div>
+              <h3 class="blog-title">How We Make Your Custom Photo Magnets — Behind the Scenes</h3>
+              <p class="blog-excerpt">Ever wondered how your photo magnet is made? Take a behind-the-scenes look at our printing process from start to finish.</p>
+              <div class="blog-meta">📅 April 8, 2026 · ⏱️ 4 min read</div>
+              <a href="#" class="btn-read-more">Read More</a>
+            </div>
+          </article>
+
+          <!-- Post 6 -->
+          <article class="blog-card">
+            <div class="blog-card-img">
+              <img src="images/image3.jpeg" alt="Blog Post" loading="lazy">
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-category">Tips</div>
+              <h3 class="blog-title">5 Tips for Taking the Perfect Photo for Your Custom Magnet</h3>
+              <p class="blog-excerpt">The better your photo, the better your magnet! Follow these 5 simple tips to make sure your custom magnet looks absolutely stunning.</p>
+              <div class="blog-meta">📅 April 1, 2026 · ⏱️ 3 min read</div>
+              <a href="#" class="btn-read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — NEWSLETTER SIGNUP -->
+    <section class="newsletter-signup-section fade-in-up" style="background: linear-gradient(135deg, #2D1B0E, #5C3D2E); padding: 80px 0;">
+      <div class="container text-center">
+        <h2 class="section-title" style="font-family: 'Playfair Display', serif; font-size: 38px; color: white;">Never Miss a Story</h2>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.8); margin-bottom: 40px;">Subscribe to get our latest tips, ideas and product updates delivered to your inbox</p>
+        
+        <form class="blog-newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECTION 6 — CTA BANNER -->
+    <section class="cta-section fade-in-up">
+      <div class="container text-center">
+        <h2 class="cta-title">Inspired? Start Creating Today!</h2>
+        <p class="cta-subtitle">Turn your favorite memories into beautiful custom magnets</p>
+        <div class="cta-buttons" style="display: flex; gap: 16px; justify-content: center; margin-top: 32px;">
+            <a href="products.html" class="btn btn-cta">Shop Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+  <footer id="main-footer">
+    <!-- Top gradient border -->
+    <div class="footer-top-border"></div>
+
+    <div class="footer-container">
+      <!-- Column 1: Brand -->
+      <div class="footer-col footer-brand">
+        <img src="images/logo.png" alt="The Sticky Pixels" class="footer-logo">
+        <p class="footer-tagline">Every Pixel Tells a Story</p>
+        <p class="footer-desc">We turn your favorite memories into beautiful custom magnets you can hold forever.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="Pinterest">p</a>
+          <a href="#" aria-label="Etsy">e</a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Products -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Our Products</h4>
+        <ul class="footer-links">
+          <li><a href="products.html">Custom Photo Magnets</a></li>
+          <li><a href="products.html">Flexible Photo Magnets</a></li>
+          <li><a href="products.html">Magnetic Bottle Openers</a></li>
+          <li><a href="bulk-orders.html">Acrylic Photo Frames</a></li>
+          <li><a href="bulk-orders.html">Magnetic Sheets 8.5x11</a></li>
+          <li><a href="3d-products.html">3D Printed Photo Frames</a></li>
+          <li><a href="3d-products.html">3D STL Files</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact & Newsletter -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Get In Touch</h4>
+        <div class="footer-contact">
+          <p>📧 contact.thestickypixels@gmail.com</p>
+          <p>🕐 Mon–Fri, 9am–6pm EST</p>
+          <p>🌍 Ships Worldwide</p>
+        </div>
+        <div class="footer-newsletter">
+          <h5>Stay in the Loop</h5>
+          <p>Get deals, new products & inspiration.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <div>
+          <p>© 2026 The Sticky Pixels. All rights reserved.</p>
+          <p style="font-size: 12px; color: #8B6355; margin-top: 4px;">
+            Powered by <a href="https://adsnord.com/" target="_blank"
+              style="color: #E8621A; text-decoration: none; font-weight: 600;">AdsNord</a>
+          </p>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>·</span>
+          <a href="#">Terms of Service</a>
+          <span>·</span>
+          <a href="#">Shipping Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
