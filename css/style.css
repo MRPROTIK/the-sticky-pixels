@@ -208,13 +208,16 @@ body {
 .hamburger {
     display: none;
     flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 18px;
+    justify-content: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 6px;
+    z-index: 10000;
+    position: relative;
 }
 
 .hamburger span {
@@ -290,16 +293,13 @@ body {
     }
 
     .nav-links {
-        display: none; /* Hide desktop nav */
-    }
-
-    .hamburger {
-        display: flex; /* Show hamburger */
+        display: none !important;
     }
 
     .nav-icons .icon-btn:not(.hamburger) {
-        display: none !important; /* Hide desktop icons in nav bar */
+        display: none !important;
     }
+
     .hamburger {
         display: flex !important;
     }
@@ -2682,15 +2682,9 @@ body {
 @media (max-width: 768px) {
     .hamburger {
         display: flex !important;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 24px;
-        height: 18px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        z-index: 10000;
+    }
+    .nav-links {
+        display: none !important;
     }
 }
 
