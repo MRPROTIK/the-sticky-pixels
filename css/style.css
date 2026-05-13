@@ -25,7 +25,7 @@ body {
     width: calc(100% - 32px);
     height: 90px;
     z-index: 9999;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +53,7 @@ body {
     filter: blur(60px);
     opacity: 0.6;
     z-index: -1;
+    pointer-events: none;
     animation: aurora-drift 12s infinite alternate ease-in-out;
 }
 
@@ -297,7 +298,10 @@ body {
     }
 
     .nav-icons .icon-btn:not(.hamburger) {
-        display: none; /* Hide desktop icons in nav bar */
+        display: none !important; /* Hide desktop icons in nav bar */
+    }
+    .hamburger {
+        display: flex !important;
     }
 }
 
@@ -2674,3 +2678,29 @@ body {
 .nav-more:hover .more-dropdown, .nav-more:focus-within .more-dropdown { display: block; }
 .more-dropdown li a { display: block; padding: 10px 20px; color: #333; text-decoration: none; transition: background 0.2s; }
 .more-dropdown li a:hover { background: #f5f5f5; }
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 24px;
+        height: 18px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10000;
+    }
+}
+
+.nav-more:hover .more-dropdown,
+.nav-more:focus-within .more-dropdown {
+    display: block !important;
+    z-index: 99999 !important;
+}
+
+.more-dropdown {
+    z-index: 99999 !important;
+    position: fixed !important;
+}
