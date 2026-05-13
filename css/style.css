@@ -2144,6 +2144,58 @@ body {
 .policy-content p {
   margin-bottom: 20px;
 }
+.policy-content ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.policy-content ul li {
+  margin-bottom: 8px;
+}
+
+.shipping-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.shipping-card {
+  background: white;
+  border-radius: 16px;
+  padding: 36px 24px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.shipping-card:hover {
+  transform: translateY(-5px);
+}
+.shipping-icon {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+.shipping-stat {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #E8621A;
+  margin-bottom: 8px;
+}
+.shipping-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #8B6355;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .shipping-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .shipping-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* --- GLOBAL UTILITIES --- */
 .container {
