@@ -103,14 +103,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Contact page accordion
-  const accordionItems = document.querySelectorAll('.accordion-item');
-  accordionItems.forEach(item => {
+  // Universal accordion
+  const allAccordionItems = document.querySelectorAll('.accordion-item');
+  allAccordionItems.forEach(item => {
     const header = item.querySelector('.accordion-header');
     if (header) {
       header.addEventListener('click', () => {
         const isOpen = item.classList.contains('open');
-        accordionItems.forEach(i => i.classList.remove('open'));
+        allAccordionItems.forEach(i => i.classList.remove('open'));
         if (!isOpen) item.classList.add('open');
       });
     }

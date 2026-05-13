@@ -1876,6 +1876,118 @@ body {
   }
 }
 
+/* --- FAQ PAGE --- */
+.faq-search {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.faq-search input {
+  width: 100%;
+  padding: 18px 20px 18px 52px;
+  border: 2px solid #F0E4D7;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #2D1B0E;
+  background: #FDF8F3;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+.faq-search input:focus {
+  border-color: #E8621A;
+}
+.faq-search .search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.faq-category {
+  margin-bottom: 48px;
+}
+.faq-category-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #2D1B0E;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #F0E4D7;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.faq-category-title span {
+  font-size: 28px;
+}
+
+/* These override existing accordion styles to match FAQ specific requirements */
+.accordion-item {
+  border: 1px solid #F0E4D7;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.accordion-item:hover {
+  box-shadow: 0 4px 20px rgba(232,98,26,0.08);
+}
+.accordion-header {
+  padding: 20px 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  transition: background 0.3s ease;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2D1B0E;
+  font-family: 'Inter', sans-serif;
+}
+.accordion-header:hover {
+  background: #FDF8F3;
+}
+.accordion-item.open .accordion-header {
+  background: rgba(232,98,26,0.05);
+  color: #E8621A;
+}
+.accordion-arrow {
+  font-size: 18px;
+  color: #E8621A;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+.accordion-item.open .accordion-arrow {
+  transform: rotate(180deg);
+}
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  background: white;
+}
+.accordion-item.open .accordion-body {
+  max-height: 300px;
+  padding: 0 24px 20px;
+}
+.accordion-body p {
+  font-size: 15px;
+  color: #5C3D2E;
+  line-height: 1.8;
+  padding-top: 12px;
+  border-top: 1px solid #F5EDE0;
+}
+
+@media (max-width: 768px) {
+  .still-questions-section > .container > div {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* --- GLOBAL UTILITIES --- */
 .container {
     max-width: 1200px;
