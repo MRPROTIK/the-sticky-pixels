@@ -826,9 +826,9 @@ body {
 }
 
 /* Badge colors */
-.badge-green { background: #4CAF50; color: white; }
-.badge-red { background: #E53935; color: white; }
-.badge-blue { background: #1E88E5; color: white; }
+.badge-green { background: #2D1B0E; color: white; }
+.badge-red { background: #E8621A; color: white; }
+.badge-blue { background: #1C1C1C; color: white; }
 
 .product-card {
   background: white;
