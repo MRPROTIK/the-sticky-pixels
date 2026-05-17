@@ -2853,3 +2853,24 @@ body {
     .nav-icons { display: flex !important; }
     .hamburger { display: flex !important; }
 }
+
+.currency-switcher select {
+  background: rgba(232,98,26,0.08);
+  border: 1px solid rgba(232,98,26,0.3);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2D1B0E;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.currency-switcher select:hover {
+  background: rgba(232,98,26,0.15);
+  border-color: #E8621A;
+}
+@media (max-width: 768px) {
+  .currency-switcher { display: none; }
+}

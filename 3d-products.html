@@ -65,6 +65,16 @@
         <button class="icon-btn cart-btn" aria-label="Cart">
           🛒 <span class="cart-badge">0</span>
         </button>
+        <div class="currency-switcher">
+          <select id="currency-select">
+            <option value="CAD" selected>🇨🇦 CAD</option>
+            <option value="USD">🇺🇸 USD</option>
+            <option value="GBP">🇬🇧 GBP</option>
+            <option value="EUR">🇪🇺 EUR</option>
+            <option value="AUD">🇦🇺 AUD</option>
+            <option value="INR">🇮🇳 INR</option>
+          </select>
+        </div>
         <!-- Hamburger -->
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span>
@@ -238,7 +248,7 @@
               </div>
             </div>
             
-            <div class="product-price" style="font-family: 'Playfair Display', serif; font-size: 28px; color: #E8621A; margin: 24px 0;">From $24.99</div>
+            <div class="product-price" style="font-family: 'Playfair Display', serif; font-size: 28px; color: #E8621A; margin: 24px 0;" data-price="24.99">From CA$24.99</div>
             
             <div style="display: flex; gap: 16px;">
               <a href="contact.html" class="btn btn-primary" style="flex: 1;">Order Now</a>
@@ -270,7 +280,7 @@
               <strong>Compatible with:</strong> Creality, Prusa, Bambu Lab, Anycubic and most FDM printers
             </div>
             
-            <div class="product-price" style="font-family: 'Playfair Display', serif; font-size: 28px; color: #E8621A; margin: 24px 0;">From $4.99</div>
+            <div class="product-price" style="font-family: 'Playfair Display', serif; font-size: 28px; color: #E8621A; margin: 24px 0;" data-price="4.99">From CA$4.99</div>
             
             <div style="display: flex; gap: 16px;">
               <a href="contact.html" class="btn btn-primary" style="flex: 1; background: #E8621A;">Download STL File</a>

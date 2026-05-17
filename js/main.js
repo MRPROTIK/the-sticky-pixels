@@ -152,3 +152,40 @@ document.querySelectorAll(
         });
     });
   });
+
+// ================================
+// CURRENCY SWITCHER
+// ================================
+async function fetchRates() {
+  try {
+    const res = await fetch('https://api.exchangerate-api.com/v4/latest/CAD');
+    const data = await res.json();
+    return data.rates;
+  } catch (e) {
+    return { CAD: 1 };
+  }
+}
+
+async function initCurrency() {
+  const rates = await fetchRates();
+  const select = document.getElementById('currency-select');
+  if (!select) return;
+
+  const symbols = {
+    CAD: 'CA$', USD: 'US$', GBP: '£',
+    EUR: '€', AUD: 'AU$', INR: '₹'
+  };
+
+  select.addEventListener('change', function () {
+    const currency = this.value;
+    const rate = rates[currency] || 1;
+    const symbol = symbols[currency] || currency;
+
+    document.querySelectorAll('[data-price]').forEach(el => {
+      const base = parseFloat(el.getAttribute('data-price'));
+      el.textContent = `From ${symbol}${(base * rate).toFixed(2)}`;
+    });
+  });
+}
+
+initCurrency();
