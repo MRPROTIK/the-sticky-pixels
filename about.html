@@ -75,7 +75,7 @@
     </nav>
 
     <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu" id="mobile-menu">
       <button class="mobile-menu-close" 
         id="mobile-menu-close" 
         aria-label="Close menu">✕</button>
@@ -88,10 +88,13 @@
         </li>
 
         <li class="mobile-nav-group">
-          <div class="mobile-nav-group-label">
-            Magnets
-          </div>
-          <ul class="mobile-nav-sub">
+          <button class="mobile-nav-group-btn" 
+            aria-expanded="false">
+            <span>Magnets</span>
+            <span class="mobile-nav-arrow">▸</span>
+          </button>
+          <ul class="mobile-nav-sub" 
+            aria-hidden="true">
             <li>
               <a href="products.html?filter=magnets" 
                 class="mobile-nav-sublink">
@@ -114,10 +117,13 @@
         </li>
 
         <li class="mobile-nav-group">
-          <div class="mobile-nav-group-label">
-            3D
-          </div>
-          <ul class="mobile-nav-sub">
+          <button class="mobile-nav-group-btn" 
+            aria-expanded="false">
+            <span>3D</span>
+            <span class="mobile-nav-arrow">▸</span>
+          </button>
+          <ul class="mobile-nav-sub" 
+            aria-hidden="true">
             <li>
               <a href="3d-products.html" 
                 class="mobile-nav-sublink">
@@ -134,10 +140,13 @@
         </li>
 
         <li class="mobile-nav-group">
-          <div class="mobile-nav-group-label">
-            Wholesale
-          </div>
-          <ul class="mobile-nav-sub">
+          <button class="mobile-nav-group-btn" 
+            aria-expanded="false">
+            <span>Wholesale</span>
+            <span class="mobile-nav-arrow">▸</span>
+          </button>
+          <ul class="mobile-nav-sub" 
+            aria-hidden="true">
             <li>
               <a href="products.html?filter=bulk" 
                 class="mobile-nav-sublink">
