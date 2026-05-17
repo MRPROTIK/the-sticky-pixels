@@ -2874,3 +2874,25 @@ body {
 @media (max-width: 768px) {
   .currency-switcher { display: none; }
 }
+
+.happy-customers-stat {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 24px;
+  background: rgba(232,98,26,0.06);
+  border-radius: 16px;
+}
+.happy-stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: #E8621A;
+  margin-bottom: 8px;
+}
+.happy-stat-label {
+  font-size: 16px;
+  color: #5C3D2E;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
