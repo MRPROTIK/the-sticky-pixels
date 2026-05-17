@@ -75,24 +75,107 @@
     </nav>
 
     <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobile-menu">
-      <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">&#10005;</button>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html?filter=magnets">2.5x2.5 Magnets</a></li>
-        <li><a href="products.html?filter=magnets">Flexible Magnets</a></li>
-        <li><a href="products.html?filter=bottle-openers">Bottle Openers</a></li>
-        <li><a href="3d-products.html">3D Printed Frames</a></li>
-        <li><a href="3d-products.html">STL Files</a></li>
-        <li><a href="products.html?filter=bulk">Magnetic Sheets</a></li>
-        <li><a href="products.html?filter=bulk">Acrylic Frames</a></li>
-        <li><a href="events-bulk.html">Events &amp; Bulk</a></li>
-        <li><a href="about.html">About Us</a></li>
+            <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-menu-close" 
+        id="mobile-menu-close" 
+        aria-label="Close menu">✕</button>
+
+      <ul class="mobile-nav-list">
+
+        <li class="mobile-nav-item">
+          <a href="index.html" 
+            class="mobile-nav-link">Home</a>
+        </li>
+
+        <li class="mobile-nav-group">
+          <div class="mobile-nav-group-label">
+            Magnets
+          </div>
+          <ul class="mobile-nav-sub">
+            <li>
+              <a href="products.html?filter=magnets" 
+                class="mobile-nav-sublink">
+                2.5×2.5 Magnets
+              </a>
+            </li>
+            <li>
+              <a href="products.html?filter=magnets" 
+                class="mobile-nav-sublink">
+                Flexible Magnets
+              </a>
+            </li>
+            <li>
+              <a href="products.html?filter=bottle-openers" 
+                class="mobile-nav-sublink">
+                Bottle Openers
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="mobile-nav-group">
+          <div class="mobile-nav-group-label">
+            3D
+          </div>
+          <ul class="mobile-nav-sub">
+            <li>
+              <a href="3d-products.html" 
+                class="mobile-nav-sublink">
+                3D Printed Frames
+              </a>
+            </li>
+            <li>
+              <a href="3d-products.html" 
+                class="mobile-nav-sublink">
+                STL Files
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="mobile-nav-group">
+          <div class="mobile-nav-group-label">
+            Wholesale
+          </div>
+          <ul class="mobile-nav-sub">
+            <li>
+              <a href="products.html?filter=bulk" 
+                class="mobile-nav-sublink">
+                Magnetic Sheets
+              </a>
+            </li>
+            <li>
+              <a href="products.html?filter=bulk" 
+                class="mobile-nav-sublink">
+                Acrylic Frames
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a href="events-bulk.html" 
+            class="mobile-nav-link">
+            Events & Bulk
+          </a>
+        </li>
+
+        <li class="mobile-nav-item">
+          <a href="about.html" 
+            class="mobile-nav-link">
+            About Us
+          </a>
+        </li>
+
       </ul>
-      <div class="mobile-icons">
-        <button class="icon-btn">&#128269;</button>
-        <button class="icon-btn">&#128722; <span class="cart-badge">0</span></button>
+
+      <div class="mobile-menu-footer">
+        <a href="contact.html" 
+          class="mobile-contact-btn">
+          Contact Us
+        </a>
       </div>
+
     </div>
   </header>
 
