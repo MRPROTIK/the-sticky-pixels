@@ -2712,7 +2712,8 @@ body {
 
 /* Dropdown */
 .nav-more { position: relative; }
-.more-btn { background: none; border: none; cursor: pointer; font: inherit; color: inherit; padding: 4px 8px; font-weight: 600; }
+.more-btn { background: none; border: none; cursor: pointer; font: inherit; color: inherit; padding: 4px 8px; font-weight: 600; font-size: 15px; color: #2D1B0E; }
+.more-btn:hover { color: #E8621A; }
 .more-dropdown { display: none; position: absolute; top: calc(100% + 8px); right: 0; background: white; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.14); min-width: 180px; padding: 8px 0; list-style: none; z-index: 99999; }
 .nav-more:hover .more-dropdown, .nav-more:focus-within .more-dropdown { display: block; }
 .more-dropdown li a { display: block; padding: 10px 20px; color: #333; text-decoration: none; }
