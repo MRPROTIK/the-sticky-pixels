@@ -51,7 +51,7 @@ body {
     position: fixed;
     border-radius: 50%;
     filter: blur(60px);
-    opacity: 0.4;
+    opacity: 0.15;
     z-index: -1;
     pointer-events: none;
     animation: aurora-drift 12s infinite alternate ease-in-out;
@@ -63,7 +63,7 @@ body {
 .blob-1 {
     width: 300px;
     height: 200px;
-    background-color: #E8621A;
+    background-color: #F0B8A8;
     top: -100px;
     left: -80px;
 }
@@ -71,7 +71,7 @@ body {
 .blob-2 {
     width: 300px;
     height: 200px;
-    background-color: #E8621A;
+    background-color: #F8DDD2;
     top: -80px;
     left: 35%;
     animation-delay: -2s;
