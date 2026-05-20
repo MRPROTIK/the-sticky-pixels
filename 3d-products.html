@@ -242,7 +242,7 @@
           <p class="section-subtitle">Handcrafted 3D printed frames for every occasion</p>
         </div>
         
-        <!-- Product 1 -->
+        <!-- Product 1 — 3D FRAMES WITH SIZE DROPDOWN (fixes customer feedback) -->
         <div class="product-feature-card">
           <div class="product-feature-img">
             <img src="images/image4.jpeg" alt="3D Printed Photo Frames" loading="lazy">
@@ -260,6 +260,16 @@
               <li>💙 BEST MOM Frame — holds 2 photos</li>
               <li>🟢 Custom Text — contact us</li>
             </ul>
+
+            <!-- SIZE DROPDOWN (NEW) — Customer Feedback Fix -->
+            <div style="margin: 20px 0; padding: 16px; background: #FDF8F3; border-radius: 8px; border: 1px solid #E8621A;">
+              <label for="frame-size-3d" style="display: block; font-weight: 700; font-size: 12px; color: #2D1B0E; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px;">Select Frame Size:</label>
+              <select id="frame-size-3d" class="size-selector" onchange="update3DFramePrice(this)" style="width: 100%; padding: 12px; border: 1px solid #E8621A; border-radius: 6px; font-size: 14px; cursor: pointer; background: white;">
+                <option value="small" data-price="24.99">Small (2.5" x 3.5") — From CA$24.99</option>
+                <option value="medium" data-price="27.99">Medium (3.25" x 4") — From CA$27.99</option>
+                <option value="large" data-price="32.99">Large (5" x 7") — From CA$32.99</option>
+              </select>
+            </div>
             
             <div class="color-options-wrap">
               <span style="font-size: 13px; font-weight: 700; color: #8B6355; margin-right: 12px;">Available Colors:</span>
@@ -272,7 +282,7 @@
               </div>
             </div>
             
-            <div class="product-price" style="font-family: 'Playfair Display', serif; font-size: 28px; color: #E8621A; margin: 24px 0;" data-price="24.99">From CA$24.99</div>
+            <div class="product-price" id="frame-price-3d" style="font-family: 'Playfair Display', serif; font-size: 28px; color: #E8621A; margin: 24px 0;" data-price="24.99">From CA$24.99</div>
             
             <div style="display: flex; gap: 16px;">
               <a href="contact.html" class="btn btn-primary" style="flex: 1;">Order Now</a>
@@ -404,6 +414,16 @@
 
   <!-- Custom JS -->
   <script src="js/main.js"></script>
+
+  <!-- 3D Frame Size Selector Function -->
+  <script>
+    function update3DFramePrice(selectElement) {
+      const price = selectElement.options[selectElement.selectedIndex].getAttribute('data-price');
+      const priceDisplay = document.getElementById('frame-price-3d');
+      priceDisplay.textContent = 'From CA$' + price;
+      priceDisplay.setAttribute('data-price', price);
+    }
+  </script>
 
     <footer id="main-footer">
     <div class="footer-top-border"></div>

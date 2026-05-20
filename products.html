@@ -239,41 +239,25 @@
             </div>
           </div>
 
-          <!-- Card 2 -->
+          <!-- Card 2 — CONSOLIDATED: Flexible Magnets with Size Dropdown (replaces Cards 2, 3, 4) -->
           <div class="product-card" data-category="magnets">
             <div class="product-badge badge-green">Popular</div>
-            <img src="images/image15.jpeg" alt="Flexible Photo Magnets 2.5x3.5">
+            <img src="images/image15.jpeg" alt="Flexible Photo Magnets">
             <div class="card-body">
-              <div class="card-size">2.5" x 3.5"</div>
               <h3 class="card-title">Flexible Photo Magnets</h3>
-              <p class="card-desc">Flexible, durable magnets with sharp detail. Great for portraits and landscape shots.</p>
-              <div class="card-price" data-price="21.99">From CA$21.99</div>
-              <a href="products.html" class="btn-view">View Details</a>
-            </div>
-          </div>
+              <p class="card-desc">Flexible, durable magnets with sharp detail. Perfect for any photo style.</p>
+              
+              <!-- Size Dropdown (NEW) -->
+              <div style="margin: 16px 0;">
+                <label for="flex-size" style="display: block; font-weight: 600; font-size: 12px; color: #2D1B0E; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Select Size:</label>
+                <select id="flex-size" class="size-selector" onchange="updateFlexPrice(this)">
+                  <option value="2.5x3.5" data-price="21.99">2.5" x 3.5" — From CA$21.99</option>
+                  <option value="3.25x4" data-price="24.99">3.25" x 4" — From CA$24.99</option>
+                  <option value="5x7" data-price="29.99">5" x 7" — From CA$29.99</option>
+                </select>
+              </div>
 
-          <!-- Card 3 -->
-          <div class="product-card" data-category="magnets">
-            <div class="product-badge badge-neutral">New Size</div>
-            <img src="images/image16.jpeg" alt="Flexible Photo Magnets 3.25x4">
-            <div class="card-body">
-              <div class="card-size">3.25" x 4"</div>
-              <h3 class="card-title">Flexible Photo Magnets</h3>
-              <p class="card-desc">A larger format for bigger memories. Beautiful on any magnetic surface.</p>
-              <div class="card-price" data-price="24.99">From CA$24.99</div>
-              <a href="products.html" class="btn-view">View Details</a>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="product-card" data-category="magnets">
-            <div class="product-badge badge-neutral">Large Format</div>
-            <img src="images/image15.jpeg" alt="Flexible Photo Magnets 5x7">
-            <div class="card-body">
-              <div class="card-size">5" x 7"</div>
-              <h3 class="card-title">Flexible Photo Magnets</h3>
-              <p class="card-desc">Our largest magnet size — make a statement with your favorite photo.</p>
-              <div class="card-price" data-price="29.99">From CA$29.99</div>
+              <div class="card-price" id="flex-price" data-price="21.99">From CA$21.99</div>
               <a href="products.html" class="btn-view">View Details</a>
             </div>
           </div>
@@ -362,6 +346,16 @@
 
   <!-- Custom JS -->
   <script src="js/main.js"></script>
+
+  <!-- Product Size Selector Functions -->
+  <script>
+    function updateFlexPrice(selectElement) {
+      const price = selectElement.options[selectElement.selectedIndex].getAttribute('data-price');
+      const priceDisplay = document.getElementById('flex-price');
+      priceDisplay.textContent = 'From CA$' + price;
+      priceDisplay.setAttribute('data-price', price);
+    }
+  </script>
 
     <footer id="main-footer">
     <div class="footer-top-border"></div>
